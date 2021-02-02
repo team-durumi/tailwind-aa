@@ -13,6 +13,18 @@ module.exports = {
 	important: true, // See https://tailwindcss.com/docs/configuration#important
 	purge: {
 		enabled: process.env.HUGO_ENVIRONMENT === 'production',
+	theme: {
+		screens: {
+		  'tablet': '640px',
+		  // => @media (min-width: 640px) { ... }
+
+		  'laptop': '1440px',
+		  // => @media (min-width: 1440px) { ... }
+
+		  'desktop': '2560px',
+		  // => @media (min-width: 2560px) { ... }
+		},
+	},
     content: [
       './hugo_stats.json',
       './layouts/**/*.html',
