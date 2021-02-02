@@ -1,0 +1,4 @@
+baseURL = "http://aa.durumi.io"
+languageCode = "en-us"
+title = "tailwind-aa-tester"
+theme = "starter"
