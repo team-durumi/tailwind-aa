@@ -1,0 +1,24 @@
+{
+ "comments": {
+  "dependencies": {},
+  "devDependencies": {
+   "@tailwindcss/typography": "starter",
+   "autoprefixer": "starter",
+   "postcss": "starter",
+   "postcss-cli": "starter",
+   "postcss-purgecss": "starter",
+   "tailwindcss": "starter"
+  }
+ },
+ "dependencies": {},
+ "devDependencies": {
+  "@tailwindcss/typography": "^0.3.0",
+  "autoprefixer": "^10.0.4",
+  "postcss": "^8.1.10",
+  "postcss-cli": "^8.0.0",
+  "postcss-purgecss": "^2.0.3",
+  "tailwindcss": "^2.0.1"
+ },
+ "name": "tailwind-aa",
+ "version": "0.1.0"
+}
