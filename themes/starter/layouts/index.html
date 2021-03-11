@@ -1,12 +1,16 @@
 {{ define "main" }}
 
-	<!-- markeing/tailwind-ui-test -->
-	{{ partial "marketing/tailwind.html" . }}
+	{{ partial "basic/header.html" . }}
+	{{ partial "marketing/hero-right.html" . }}
+	{{ partial "marketing/recent-items.html" . }}
+	{{ partial "marketing/hero-left.html" . }}
+	<!-- {{ partial "marketing/tailwind.html" . }} -->
 
-	<article class="prose lg:prose-xl">
+	<!-- <article class="prose lg:prose-xl">
 		<h1 class="text-4xl">
 		  	{{ .Title }}
 		</h1>
 			{{ .Content }}
-	</article>
+	</article> -->
+	{{ partial "basic/footer.html" . }}
 {{ end }}

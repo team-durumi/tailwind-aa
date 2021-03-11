@@ -1,13 +1,12 @@
-# hugo-starter-tailwind-basic
+# 범용적으로 사용할 수 있는 aa-starter-theme
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5a510ba1-96b4-4834-9a07-913dce4b5061/deploy-status)](https://app.netlify.com/sites/lucid-nightingale-60a4e2/deploys)
+## 진행
 
-A very simple starter set up with [TailwindCSS](https://tailwindcss.com/) and its [typography plugin](https://tailwindcss.com/docs/typography-plugin) and a build setup using [PostCSS](https://postcss.org/) and PurgeCSS (when running the production build).
+- UI 기준에 잡혀있는데로, 테마 설정을 시도한다. (color, typo)
+- html에 찍고 있는 partial에 데이터를 data/user-marketing.yml 로 옮겨본다.
+- alpinejs 를 사용하도록 할 수 도 있고, js 적용을 다시 결정할 수도 있다.
 
-In the preview deployment on Netlify it currently has a 100 score on both mobile and desktop on [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Flucid-nightingale-60a4e2.netlify.app%2F&tab=mobile).
 
-
-This setup can be used both as a starter project and a theme.
 
 ## As a Project
 

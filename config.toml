@@ -1,7 +1,8 @@
-baseURL = "http://aa.durumi.io"
-languageCode = "en-us"
+baseURL = "https://sad-ptolemy-43f516.netlify.app"
+languageCode = "kr-ko"
 title = "tailwind-aa-tester"
 theme = "starter"
+disableKinds = ["taxonomy", "term"]
 
 [build]
 # Used by PurgeCSS
