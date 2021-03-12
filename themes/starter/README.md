@@ -2,7 +2,7 @@
 
 ## 진행
 
-- featured item 기존 블로그 폼으로 진행한다.  / video-item 페이지를 노출해 본다. 
+- featured item 기존 블로그 폼으로 진행한다. / video-item 페이지를 노출해 본다. 
 - 목록을 위한 aside  부분
 - UI 기준에 잡혀있는데로, 테마 설정을 시도한다. (color, typo)
 - alpinejs 를 사용하도록 할 수 도 있고, js 적용을 다시 결정할 수도 있다.
@@ -12,7 +12,8 @@
 
 ## data/marketing info
 - 외부에 일반 사람들에게 편집을 전달해도 이상하지 않을 dummy text
-- user information(전역 설정)도 marketing.yml에 표시.
+- user information(전역 설정)도 marketing.yml에 표시한다. 
+- section UI 를 만들어서 개발 -> marketing.yml에 데이터 교체(해당 파일만 교체해도 partial 파일들은 크게 손 대지 않아도 된다.)
 
 
 ## content item metadata
