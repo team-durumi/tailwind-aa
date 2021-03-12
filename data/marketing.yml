@@ -7,14 +7,14 @@ user:
   tel : 02-0000-0000
   fax : 02-0000-0000
   email : team@durumi.io
-  representative: 홍영택, 한운장, 김현민, 이용선
+  representative: 홍영택, 한운장, 김현민, 이용선, 정민수
   location : Somewhere in Seoul
   footer :
     대표전화 : 02-0000-0000
     팩스 : 02-0000-0000
     주소 : Somewhere in Seoul
     이메일 : team@durumi.io
-    대표자 : 홍영택, 한운장, 김현민, 이용선
+    대표자 : 홍영택, 한운장, 김현민, 이용선, 정민수
     year : "2021"
     github : http://github.com/team-durumi
     fb : http://facebook.com
@@ -26,7 +26,47 @@ user:
 
 ######## Partials/Marketing에 노출되는 사용자 데이터를 편집합니다. ########
 
-############################ hero-right ##########################
+############################ featured-items ##########################
+featuredItems:
+  category : 영상자료
+  title : 연구소 대표 기록 소개
+  enable : true
+  content : 디지털아카이브에서 사용자들에게 쉽게 소개하며, 역사적 의의가 있는 아이템을 소개합니다.
+  listItem:
+    - category : 한국전쟁
+      title : 북한인민군 소년병 포로
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://dummyimage.com/462x384
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-01
+      author: 디스크립션 작성자
+      creator: 1951.5.29., RG 127-GK-109-A8872, NARA
+      url : /items/0012
+
+    - category : 2차세계대전
+      title : 정규군 포로
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://dummyimage.com/462x384
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-02
+      author: 디스크립션 작성자
+      creator: 1951.10.17, RG 111-SC-Box 813-382561, NARA
+      url : /items/0013      
+
+    - category : category
+      title : 포획된 전쟁포로
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://i.ytimg.com/vi_webp/HO06JiqW5gg/maxresdefault.webp
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-03
+      author: 디스크립션 작성자
+      creator: 951.10.17, RG 111-SC-Box 813-382561, NARA
+      url : /items/0014     
+
+############################ hero-right/left ##########################
 heroRight:
   enable : true
   title : Visual Design System 을 포함하고 있는
@@ -86,7 +126,7 @@ faq:
     - question : 왜 이런걸 만들게 된 거죠 ?
       answer : 개발팀이 경험한 디지털아카이브는 개발과 커뮤니케이션에 비용이 많이 들었습니다. 모든 디지털아카이브가 폐쇄적이어야 할 이유는 없고, 웹서버와 대용량의 Storage, 비싼 검색엔진과 라이센스비용을 내야 하는 데이터베이스를 사용할 이유는 없습니다. 무해하고, 괜찮은 디지털아카이브가 더 많이 생겨나고, 사용되길 바라는 마음에서 시작하게 되었습니다. 
 
-############################ call to actions ##########################
+####################### call to actions #####################
 
 cta:
   enable : true
