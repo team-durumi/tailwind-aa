@@ -1,0 +1,19 @@
+<!-- 2box -->
+<section class="text-white body-font">
+	<div class="flex flex-wrap -mx-4 -mb-4 md:mb-0">
+	  {{ range $.Site.Data.marketing.twobox.firstBox }}
+	  <div class="bg-blue-600 w-full px-28 py-48 md:w-1/2 px-4 mb-4 md:mb-0">
+	  	<h4 class="text-5xl mb-2 leading-tight font-bold font-heading">{{ .title }}</h4>
+	  	<p class="mb-2 leading-relaxed">{{ .content }}</p>
+	  	<p class="mb-2 leading-relaxed"><a href="{{ .url }}">{{ .urlLabel }} >></a></p>
+	  </div>
+	  {{ end }}
+	  {{ range $.Site.Data.marketing.twobox.secondBox }}
+	  <div class="bg-gray-600 w-full px-28 py-48 md:w-1/2 px-4 mb-4 md:mb-0">
+	  	<h4 class="text-5xl mb-2 leading-tight font-bold font-heading">{{ .title }}</h4>
+	  	<p class="mb-2 leading-relaxed">{{ .content }}</p>
+	  	<p class="mb-2 leading-relaxed"><a href="{{ .url }}">{{ .urlLabel }} >></a></p>
+	  </div>
+	  {{ end }}
+	</div>
+</section>
