@@ -1,5 +1,3 @@
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
 <div
 
 x-data="{
@@ -28,10 +26,10 @@ class="max-w-auto max-h-screen"
 
         <template x-for="(image, index) in images">
             <figure class="space-y-2" x-show="selected === index">
-                <img 
+                <img
                     :key="index"
                     class="h-64 w-full object-cover object-center" :src="image.src" :alt="image.alt">
-                    
+
                 <figcaption x-text="image.caption" class="text-xs text-gray-600"></figcaption>
             </figure>
         </template>
