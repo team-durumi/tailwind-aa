@@ -1,6 +1,6 @@
 /public
 /node_modules
 /resources
-/content/items
+/content/items/aa
 hugo_stats.json
 items-rclone.md
