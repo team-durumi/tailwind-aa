@@ -1,4 +1,6 @@
 /public
 /node_modules
 /resources
+/content/items
 hugo_stats.json
+items-rclone.md

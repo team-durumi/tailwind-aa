@@ -7,3 +7,6 @@ disableKinds = ["taxonomy", "term"]
 [build]
 # Used by PurgeCSS
 writeStats = true
+
+[permalinks]
+  items = "/:title/"
