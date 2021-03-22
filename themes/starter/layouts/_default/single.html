@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<div class="flex flex-wrap -mx-4 -mb-4 md:mb-0">
+  <div class="w-full md:w-1/4 px-4 py-4 mb-4 md:mb-0">
+  	browse-aside
+  </div>
+  <div class="w-full md:w-3/4 px-4 py-4 mb-4 md:mb-0">
+  	<h1>Items</h1>
+  	<article class="prose lg:prose-xl">
+		<h1 class="text-4xl">
+		  	{{ .Title }}
+		</h1>
+			{{ .Content }}
+			{{ .Params.Identifier }}
+			{{ .Params.Author }}
+			{{ .Params.Creator}}
+			{{ .Params.Tags }}
+			{{ .Params.Link }}
+			{{ .Params.Image }}
+	</article>
+  </div>
+</div>
+
+{{ end }}      
