@@ -77,40 +77,7 @@ featuredItems:
       identifier: ccwps-03
       author: 디스크립션 작성자
       creator: 951.10.17, RG 111-SC-Box 813-382561, NARA
-      url : /items/0014
-
-    - category : category
-      title : 포획된 전쟁포로
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
-      component : https://dummyimage.com/462x384
-      author: CCWPS
-      date: 2020-11-23
-      identifier: ccwps-03
-      author: 디스크립션 작성자
-      creator: 951.10.17, RG 111-SC-Box 813-382561, NARA
-      url : /items/0014
-
-    - category : category
-      title : 포획된 전쟁포로
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
-      component : https://dummyimage.com/462x384
-      author: CCWPS
-      date: 2020-11-23
-      identifier: ccwps-03
-      author: 디스크립션 작성자
-      creator: 951.10.17, RG 111-SC-Box 813-382561, NARA
-      url : /items/0014
-      
-    - category : category
-      title : 포획된 전쟁포로
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
-      component : https://dummyimage.com/462x384
-      author: CCWPS
-      date: 2020-11-23
-      identifier: ccwps-03
-      author: 디스크립션 작성자
-      creator: 951.10.17, RG 111-SC-Box 813-382561, NARA
-      url : /items/0014                  
+      url : /items/0014               
 
 ############################ hero-right/left ##########################
 heroRight:
