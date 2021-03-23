@@ -3,19 +3,19 @@ publish = "public"
 command = "hugo --gc --minify -d public;"
 
 [context.production.environment]
-HUGO_VERSION = "0.79.1"
+HUGO_VERSION = "0.81.0"
 
 [context.branch-deploy]
 command = "hugo --minify --gc -d public -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.79.1"
+HUGO_VERSION = "0.81.0"
 
 [context.deploy-preview]
 command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.79.1"
+HUGO_VERSION = "0.81.0"
 
 [[headers]]
 for = "/*.jpg"
@@ -46,13 +46,3 @@ for = "/webfonts/*"
 
 [headers.values]
 Cache-Control = "public, max-age=604800"
-
-[[headers]]
-for = "/*"
-
-[headers.values]
-X-Frame-Options = "SAMEORIGIN"
-X-XSS-Protection = "1; mode=block"
-X-Content-Type-Options = "nosniff"
-Referrer-Policy = "no-referrer"
-Content-Security-Policy = "default-src 'self' 'unsafe-inline'  https://cdn.jsdelivr.net; img-src 'self' 'unsafe-inline' https://dummyimage.com https://images.unsplash.com https://i.ytimg.com; media-src 'self' https://www.youtube.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; script-src-elem 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; frame-src 'self' https://app.frame.io https://www.youtube.com/ https://vimeo.com"
