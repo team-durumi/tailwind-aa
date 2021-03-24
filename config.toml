@@ -1,7 +1,7 @@
 baseURL = "https://romantic-visvesvaraya-014147.netlify.app/"
 languageCode = "kr-ko"
 title = "tailwind-aa-tester"
-theme = "starter"
+theme = "tailwind-aa-theme"
 disableKinds = ["taxonomy", "term"]
 
 [build]
