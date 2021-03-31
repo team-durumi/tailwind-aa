@@ -17,6 +17,8 @@ user:
     대표자 : 홍영택, 한운장, 김현민, 이용선, 정민수
     year : "2021"
     github : http://github.com/team-durumi
+    url : http://durumi.io
+    caption: Github/Team-Durumi
     fb : http://facebook.com
     tw : http://twitter.com
     instagram : http://instagram.com
@@ -77,7 +79,7 @@ featuredItems:
       identifier: ccwps-03
       author: 디스크립션 작성자
       creator: 951.10.17, RG 111-SC-Box 813-382561, NARA
-      url : /items/0014      
+      url : /items/0014               
 
 ############################ hero-right/left ##########################
 heroRight:

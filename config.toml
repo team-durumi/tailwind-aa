@@ -10,3 +10,32 @@ writeStats = true
 
 [permalinks]
   items = "/:title/"
+
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  URL = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Marketing Layout"
+  URL = "marketing"
+  weight = 2
+
+  [[menu.main]]
+  name = "(C)items"
+  URL = "items"
+  weight = 3
+
+  ############# footer menu #############
+  [[menu.footer]]
+  name = "Marketing Layout"
+  URL = "marketing"
+  weight = 1
+
+  [[menu.footer]]
+  name = "(C)items"
+  URL = "items"
+  weight = 2
