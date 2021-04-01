@@ -2,15 +2,14 @@
  "comments": {
   "dependencies": {},
   "devDependencies": {
-   "@tailwindcss/typography": "starter",
-   "autoprefixer": "starter",
-   "postcss": "starter",
-   "postcss-cli": "starter",
-   "postcss-purgecss": "starter",
-   "tailwindcss": "starter"
+   "@tailwindcss/typography": "tailwind-aa-theme",
+   "autoprefixer": "tailwind-aa-theme",
+   "postcss": "tailwind-aa-theme",
+   "postcss-cli": "tailwind-aa-theme",
+   "postcss-purgecss": "tailwind-aa-theme",
+   "tailwindcss": "tailwind-aa-theme"
   }
  },
- "dependencies": {},
  "devDependencies": {
   "@tailwindcss/typography": "^0.3.0",
   "autoprefixer": "^10.0.4",
