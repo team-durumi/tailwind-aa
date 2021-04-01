@@ -1,7 +1,7 @@
 baseURL = "https://romantic-visvesvaraya-014147.netlify.app/"
 languageCode = "kr-ko"
 title = "tailwind-aa-tester"
-theme = "tailwind-aa-theme"
+theme = ["tailwind-aa-theme", "hugo-debugprint"]
 disableKinds = ["taxonomy", "term"]
 
 [build]
@@ -28,6 +28,11 @@ writeStats = true
   name = "(C)items"
   URL = "items"
   weight = 3
+
+  [[menu.main]]
+  name = "포스트목록"
+  URL = "posts"
+  weight = 4
 
   ############# footer menu #############
   [[menu.footer]]
