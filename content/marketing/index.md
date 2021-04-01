@@ -1,3 +1,4 @@
 ---
-title: "마케팅 레이아웃"
+title: 마케팅페이지
+layout: marketing
 ---
