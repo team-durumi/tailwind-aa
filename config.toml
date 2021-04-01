@@ -30,7 +30,7 @@ writeStats = true
   weight = 3
 
   [[menu.main]]
-  name = "포스트목록"
+  name = "(C)posts"
   URL = "posts"
   weight = 4
 
