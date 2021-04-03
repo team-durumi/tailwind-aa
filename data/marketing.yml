@@ -153,3 +153,11 @@ cta:
     enable : true
     label : 팀 두루미 프로젝트 살펴보기
     url : https://archives.durumi.io/
+
+####################### contact #####################
+
+contact:
+  enable : true
+  category : 수집
+  title : 함께 참여해서 아이템을 수집하세요. !
+  content : 디지털 아카이브에서 사용하는 기본 파일을 드래그해서 드롭하세요. 목록이 조사된 엑셀 파일이나, CSV 파일을 업로드하셔도 됩니다.
