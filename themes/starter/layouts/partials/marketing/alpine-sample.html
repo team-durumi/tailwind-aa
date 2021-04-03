@@ -1,0 +1,343 @@
+<!-- faq/alphineJS를 사용한 faq 스타일입니다.  -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<!-- avatar-dropdown-menu  -->
+<div x-data="
+{
+    open: false
+}
+"
+
+class="relative z-10">
+
+    <button @click="open = true" class="w-12 h-12 rounded-full flex items-center justify-center overflow-hidden relative cursor-pointer hover:shadow-md focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+        <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Your Profile Image">
+    </button>
+
+    <div x-cloak x-show.transition="open" @click.away="open = false" @keydown.escape.window="open = false" class="absolute z-10 mt-2 bg-white shadow-lg rounded-sm overflow-hidden">
+        <nav>
+            <ul class="text-sm text-gray-600 py-2">
+                <li class="flex">
+                    <a class="w-full px-6 py-2 transition duration-150 hover:text-indigo-600 hover:underline hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-indigo-600 focus:underline" href="" target="_blank" title="Link 1">Link 1</a>
+                </li>
+                <li class="flex">
+                    <a class="w-full px-6 py-2 transition duration-150 hover:text-indigo-600 hover:underline hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-indigo-600 focus:underline" href="" target="_blank" title="Link 2">Link 2</a>
+                </li>
+                <li class="flex">
+                    <a class="w-full px-6 py-2 transition duration-150 hover:text-indigo-600 hover:underline hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-indigo-600 focus:underline" href="" target="_blank" title="Link 3">Link 3</a>
+                </li>
+                <li class="flex">
+                    <a class="w-full px-6 py-2 transition duration-150 hover:text-indigo-600 hover:underline hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-indigo-600 focus:underline" href="" target="_blank" title="Link 4">Link 4</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+<!-- Countdown Clock -->
+
+<p class="text-gray-600 mb-2 text-xs">Days left in this wretched year...</p>
+
+<div
+
+x-data="
+{
+    clock: {
+        days: '00',
+        hours: '00',
+        minutes: '00',
+        seconds: '00',
+        remaining: 1000
+    },
+    deadline: '31 December 2021',
+    calculateTimeLeft: function () {
+        const deadline = this.deadline;
+        const remaining = Date.parse(deadline) - Date.parse(new Date());
+        const seconds = Math.floor( (remaining/1000) % 60 );
+        const minutes = Math.floor( (remaining/1000/60) % 60 );
+        const hours = Math.floor( (remaining/(1000*60*60)) % 24 );
+        const days = Math.floor( remaining/(1000*60*60*24) );
+        return {
+            days,
+            hours,
+            minutes,
+            seconds,
+            remaining
+        };
+    },
+    startCountdown: function () {
+        const countdownIntervalFunction = setInterval(() => {
+            const timeLeft = this.calculateTimeLeft();
+            this.clock = timeLeft;
+            if (timeLeft.remaining <= 0) {
+                clearInterval(countdownIntervalFunction);
+            }
+        }, 1000);
+    }
+}
+"
+
+x-init="startCountdown()"
+
+class="flex items-center space-x-2 sm:space-x-4">
+    
+    <div class="flex flex-col items-center justify-between space-y-1">
+
+        <span class="font-bold text-primary text-2xl sm:text-3xl md:text-4xl w-16 h-16 sm:w-24 sm:h-24 flex items-center justify-center border border-gray-200 rounded-sm" x-text="clock.days"></span>
+        <span class="text-xs sm:text-sm text-gray-600">Days</span>
+
+    </div>
+
+    <div class="flex flex-col items-center justify-between space-y-1">
+
+        <span class="font-bold text-primary text-2xl sm:text-3xl md:text-4xl w-16 h-16 sm:w-24 sm:h-24 flex items-center justify-center border border-gray-200 rounded-sm" x-text="clock.hours"></span>
+        <span class="text-xs sm:text-sm text-gray-600">Hours</span>
+
+    </div>
+
+    <div class="flex flex-col items-center justify-between space-y-1">
+
+        <span class="font-bold text-primary text-2xl sm:text-3xl md:text-4xl w-16 h-16 sm:w-24 sm:h-24 flex items-center justify-center border border-gray-200 rounded-sm" x-text="clock.minutes"></span>
+        <span class="text-xs sm:text-sm text-gray-600">Minutes</span>
+
+    </div>
+
+    <div class="flex flex-col items-center justify-between space-y-1">
+
+        <span class="font-bold text-primary text-2xl sm:text-3xl md:text-4xl w-16 h-16 sm:w-24 sm:h-24 flex items-center justify-center border border-gray-200 rounded-sm" x-text="clock.seconds"></span>
+        <span class="text-xs sm:text-sm text-gray-600">Seconds</span>
+
+    </div>
+
+</div>
+
+
+<!-- star rating -->
+
+<div x-data="
+    {
+        rating: 0,
+        hoverRating: 0,
+        ratings: [ 1, 2, 3, 4, 5]
+    }
+" class="flex items-center space-x-1" 
+  >
+    
+    <template x-for="star in ratings">
+        <button 
+        @click="rating = star"
+        @mouseover="hoverRating = star"
+        @mouseleave="hoverRating = rating"
+        aria-hidden="true"
+        class="rounded-sm focus:outline-none focus:shadow-outline p-1">
+            <svg
+                :class="{ 'text-gray-600' : hoverRating >= star, 'text-yellow-400' : rating >= star }" 
+                class="w-8 text-gray-400 fill-current transition duration-150 cursor-pointer" viewBox="0 -10 511.991 511" xmlns="http://www.w3.org/2000/svg"><path d="M510.652 185.883a27.177 27.177 0 00-23.402-18.688l-147.797-13.418-58.41-136.75C276.73 6.98 266.918.497 255.996.497s-20.738 6.483-25.023 16.53l-58.41 136.75-147.82 13.418c-10.837 1-20.013 8.34-23.403 18.688a27.25 27.25 0 007.937 28.926L121 312.773 88.059 457.86c-2.41 10.668 1.73 21.7 10.582 28.098a27.087 27.087 0 0015.957 5.184 27.14 27.14 0 0013.953-3.86l127.445-76.203 127.422 76.203a27.197 27.197 0 0029.934-1.324c8.851-6.398 12.992-17.43 10.582-28.098l-32.942-145.086 111.723-97.964a27.246 27.246 0 007.937-28.926zM258.45 409.605"/></svg>
+        </button>
+       
+    </template>
+
+    <div class="hidden">
+        <label for="rating">Your star rating</label>
+        <input type="number" name="rating" x-model="rating">
+    </div>
+
+</div>
+
+
+<div
+x-cloak
+wire:ignore
+x-data="{
+    tagify: null
+}"
+
+class="w-full"
+
+x-init="
+    tagify = new Tagify($refs['tag-input']);
+"
+
+>
+    <input x-ref="tag-input" placeholder="Add tags...">
+</div>
+
+<!-- avatar-dropdown-menu  -->
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+
+<div
+    class="w-full relative mt-4"
+
+    x-data="{
+        muuri: null,
+        refreshGrid: function () {
+            this.muuri.refreshItems().layout();
+        }
+    }"
+
+    @load.window="refreshGrid"
+
+    x-init="
+            muuri = new Muuri(
+            $refs['muuri-grid'],
+                {
+                    layout: {
+                        fillGaps: false,
+                    },
+                    layoutDuration: 600,
+                    dragEnabled: true,
+                }
+            );
+    "
+>
+    
+    <ul x-ref="muuri-grid" class="relative w-full -m-2">
+
+            <li class="absolute cursor-pointer m-2 block">
+                <div>
+                    <img class="w-64" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Dummy Image">
+                </div>
+            </li>
+
+            <li class="absolute cursor-pointer m-2 block">
+                <div>
+                    <img class="w-64" src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Dummy Image">
+                </div>
+            </li>
+
+            <li class="absolute cursor-pointer m-2 block">
+                <div>
+                    <img class="w-64" src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Dummy Image">
+                </div>
+            </li>
+
+            <li class="absolute cursor-pointer m-2 block">
+                <div>
+                    <img class="w-64" src="https://images.unsplash.com/photo-1544698310-74ea9d1c8258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Dummy Image">
+                </div>
+            </li>
+
+            <li class="absolute cursor-pointer m-2 block">
+                <div>
+                    <img class="w-64" src="https://images.unsplash.com/photo-1522947961977-67fe74257c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Dummy Image">
+                </div>
+            </li>
+
+            <li class="absolute cursor-pointer m-2 block">
+                <div>
+                    <img class="w-64" src="https://images.unsplash.com/photo-1550591901-c036ab7c45f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Dummy Image">
+                </div>
+            </li>
+
+            <li class="absolute cursor-pointer m-2 block">
+                <div>
+                    <img class="w-64" src="https://images.unsplash.com/photo-1544333323-ec9ed3218dd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Dummy Image">
+                </div>
+            </li>
+
+            <li class="absolute cursor-pointer m-2 block">
+                <div>
+                    <img class="w-64" src="https://images.unsplash.com/photo-1542683305-710078a12f73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Dummy Image">
+                </div>
+            </li>
+
+    </ul>
+
+</div>
+
+<!-- Tagify -->
+<link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css">
+<script src="https://unpkg.com/@yaireo/tagify"></script>
+<script src="https://unpkg.com/@yaireo/tagify@3.1.0/dist/tagify.polyfills.min.js"></script>
+<div
+x-cloak
+wire:ignore
+x-data="{
+    tagify: null
+}"
+
+class="w-full"
+
+x-init="
+    tagify = new Tagify($refs['tag-input']);
+"
+
+>
+    <input x-ref="tag-input" placeholder="Add tags...">
+</div>
+
+
+<!-- Filefond -->
+<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+<link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+<link href="https://unpkg.com/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.css" rel="stylesheet">
+<script src="https://unpkg.com/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.js"></script>
+<script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
+<script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+<div
+    class=""
+    x-data="{
+        pond: null
+    }"
+
+    x-init="
+        FilePond.registerPlugin(FilePondPluginFileValidateType);
+        FilePond.registerPlugin(FilePondPluginFileValidateSize);
+        FilePond.registerPlugin(FilePondPluginImagePreview);
+        FilePond.setOptions({
+            acceptedFileTypes:
+            [
+                'image/png', 'image/jpeg'
+            ],
+            allowMultiple: true,
+            maxFileSize: '1MB'
+        });
+        const filepond = FilePond.create(
+            $refs.filepond
+        );
+        pond = filepond;
+    "
+
+>
+    <input type="file" x-ref="filepond">
+</div>
+
+<!-- Litepicker -->
+<link src="https://cdn.jsdelivr.net/npm/litepicker/dist/css/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/litepicker/dist/js/main.js"></script>
+
+<div
+    x-data
+    x-init="
+        new Litepicker({
+            element: $refs.input,
+            singleMode: true,
+            format: 'DD/MM/YYYY',
+            onSelect: function(date){
+                console.log(date)
+            },
+            minDate: new Date(Date.now() + 1*24*60*60*1000)
+        });
+    "
+    class="flex rounded max-w-sm"
+>
+    <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 text-gray-500 sm:text-sm">
+        <svg class="h-5 w-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C5.44772 2 5 2.44772 5 3V4H4C2.89543 4 2 4.89543 2 6V16C2 17.1046 2.89543 18 4 18H16C17.1046 18 18 17.1046 18 16V6C18 4.89543 17.1046 4 16 4H15V3C15 2.44772 14.5523 2 14 2C13.4477 2 13 2.44772 13 3V4H7V3C7 2.44772 6.55228 2 6 2ZM6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H14C14.5523 9 15 8.55228 15 8C15 7.44772 14.5523 7 14 7H6Z"/>
+        </svg>
+    </span>
+
+    <input
+        value="22/12/2020"
+        x-ref="input"
+        name="date"
+        class="rounded-r border border-gray-300 px-3 py-2 text-gray-700 w-full focus:outline-none focus:shadow-outline"
+    />
+</div>
+
+
+
