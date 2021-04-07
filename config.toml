@@ -1,4 +1,4 @@
-baseURL = "https://romantic-visvesvaraya-014147.netlify.app/"
+baseURL = "http://aa.durumi.io"
 languageCode = "kr-ko"
 title = "tailwind-aa-tester"
 theme = ["tailwind-aa-theme", "hugo-debugprint"]
