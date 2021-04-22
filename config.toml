@@ -1,4 +1,4 @@
-baseURL = "http://aa.durumi.io"
+baseURL = "https://aa.durumi.io"
 languageCode = "kr-ko"
 title = "tailwind-aa-tester"
 theme = ["tailwind-aa-theme", "hugo-debugprint", "hugo-search-fuse-js"]
@@ -15,7 +15,7 @@ writeStats = true
 [menu]
 
   [[menu.main]]
-  name = "Home"
+  name = "Home(test)"
   URL = "/"
   weight = 1
 
@@ -25,14 +25,19 @@ writeStats = true
   weight = 2
 
   [[menu.main]]
+  name = "about"
+  URL = "about"
+  weight = 3
+
+  [[menu.main]]
   name = "(C)items"
   URL = "items"
-  weight = 3
+  weight = 4
 
   [[menu.main]]
   name = "(C)posts"
   URL = "posts"
-  weight = 4
+  weight = 5
 
   ############# footer menu #############
   [[menu.footer]]
