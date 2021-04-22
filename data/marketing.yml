@@ -24,7 +24,15 @@ user:
     instagram : http://instagram.com
     linkedin : http://linkedin.com
 
+######## Partials/app에 노출되는 사용자 데이터를 편집합니다. ########
 
+############################ simple-browse.html ##########################
+browseItems:
+  category : 아카이브(국내외)
+  title : 디지털아카이브 목록
+  enable : true
+  url : https://docs.google.com/spreadsheets/d/e/2PACX-1vRHcD8xBpgJwbVpcQj23lzwmjMH98kMRIIOwLU0oRefC0dZh6Fh1RLE6QdEbM3xrFla9gJQta59DXVv/pub
+  content : 국내외 디지털아카이브를 수집합니다. 개발 및 컨설팅에 참고하고자 수집을 시작했습니다. @daamable @woonjjang
 
 ######## Partials/Marketing에 노출되는 사용자 데이터를 편집합니다. ########
 
