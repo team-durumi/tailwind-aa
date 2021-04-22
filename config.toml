@@ -1,7 +1,7 @@
 baseURL = "http://aa.durumi.io"
 languageCode = "kr-ko"
 title = "tailwind-aa-tester"
-theme = ["tailwind-aa-theme", "hugo-debugprint"]
+theme = ["tailwind-aa-theme", "hugo-debugprint", "hugo-search-fuse-js"]
 disableKinds = ["taxonomy", "term"]
 
 [build]
