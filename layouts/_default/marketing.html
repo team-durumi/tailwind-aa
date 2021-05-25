@@ -1,0 +1,69 @@
+{{ define "main" }}
+
+	<div 
+    x-data="{
+      openTab: 1,
+      activeClasses: 'border-l border-t border-r rounded-t text-blue-700',
+      inactiveClasses: 'text-blue-500 hover:text-blue-800'
+    }" 
+    class="p-6"
+  >
+    <ul class="flex border-b items-center justify-center">
+      <li @click="openTab = 1" :class="{ '-mb-px': openTab === 1 }" class="-mb-px mr-1">
+        <a :class="openTab === 1 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#">Slider</a>
+      </li>
+      <li @click="openTab = 2" :class="{ '-mb-px': openTab === 2 }" class="mr-1">
+        <a :class="openTab === 2 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#">Featured</a>
+      </li>
+      <li @click="openTab = 3" :class="{ '-mb-px': openTab === 3 }" class="mr-1">
+        <a :class="openTab === 3 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#">Faq</a>
+      </li>
+      <li @click="openTab = 4" :class="{ '-mb-px': openTab === 4 }" class="mr-1">
+        <a :class="openTab === 4 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#">Call to action</a>
+      </li>
+      <li @click="openTab = 5" :class="{ '-mb-px': openTab === 5 }" class="mr-1">
+        <a :class="openTab === 5 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#">Form</a>
+      </li>
+      <li @click="openTab = 6" :class="{ '-mb-px': openTab === 6 }" class="mr-1">
+        <a :class="openTab === 6 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#">header/footer</a>
+      </li>
+      <li @click="openTab = 7" :class="{ '-mb-px': openTab === 7 }" class="mr-1">
+        <a :class="openTab === 7 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#">In progress</a>
+      </li>      
+    </ul>
+    <div class="w-full pt-4">
+      <div x-show="openTab === 1">
+      	{{ partial "marketing/slider_alpine.html" . }}
+	    {{ partial "marketing/slider_jquery.html" . }}
+      </div>
+      <div x-show="openTab === 2">
+        {{ partial "marketing/featured-items.html" . }}
+		{{ partial "marketing/hero-right.html" . }}
+		{{ partial "marketing/hero-left.html" . }}
+		{{ partial "marketing/hero-collection.html" . }}
+      </div>
+      <div x-show="openTab === 3">
+        {{ partial "marketing/faq.html" . }}
+		{{ partial "marketing/faq_accordion.html" . }}
+	  </div>
+	  <div x-show="openTab === 4">
+	  	{{ partial "marketing/cta.html" . }}<br>
+	    {{ partial "marketing/twobox.html" . }}
+	  </div>
+	  <div x-show="openTab === 5">
+	  	{{ partial "marketing/contact.html" . }}
+	  </div>
+	  <div x-show="openTab === 6">
+	  	{{ partial "basic/header.html" . }}
+	  	{{ partial "basic/header_new.html" . }}
+	  	{{ partial "basic/footer.html" . }}
+	  </div>
+	  <div x-show="openTab === 7">
+	  	{{ partial "app/simple-browse.html" . }}
+	  	{{ partial "app/sample-searchbox.html" . }}
+	  	{{ partial "app/projects-data.html" . }}
+	  </div>	  	  	
+    </div>
+  </div>
+
+{{ end }}
