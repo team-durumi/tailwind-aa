@@ -9,6 +9,7 @@ user:
   email : team@durumi.io
   representative: 홍영택, 한운장, 김현민, 이용선, 정민수
   location : Somewhere in Seoul
+  logo : img/durumi.png
   footer :
     대표전화 : 02-0000-0000
     팩스 : 02-0000-0000
@@ -17,8 +18,8 @@ user:
     대표자 : 홍영택, 한운장, 김현민, 이용선, 정민수
     year : "2021"
     github : http://github.com/team-durumi
-    url : http://durumi.io
-    caption: Github/Team-Durumi
+    url : http://github.com/team-durumi
+    caption: Github
     fb : http://facebook.com
     tw : http://twitter.com
     instagram : http://instagram.com
