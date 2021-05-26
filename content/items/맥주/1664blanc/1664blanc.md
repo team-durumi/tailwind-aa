@@ -7,7 +7,7 @@ title: 1664blanc
 weight: 10
 author: "woonjjang"
 creator: "생산자"
-tags:
+tags: 맥주
 created-date: ""
 link: "http://www.peace.com"
 image: "/items/aa/소주/참이슬오리지널/IMG_4635.jpg"

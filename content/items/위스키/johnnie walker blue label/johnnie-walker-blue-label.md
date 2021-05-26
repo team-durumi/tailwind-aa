@@ -7,7 +7,7 @@ title: johnnie-walker-blue-label
 weight: 10
 author: "ccwps"
 creator: ""
-tags:
+tags: 위스키
 created-date: ""
 link: "http://www.peace.com"
 image: "/items/aa/위스키/johnnie walker blue label.jpg"
