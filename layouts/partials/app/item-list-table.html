@@ -1,0 +1,53 @@
+<table class="w-auto h-auto divide-y divide-gray-200">
+  <thead class="bg-gray-50">
+    <tr>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Identifier
+      </th>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Title
+      </th>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Creator
+      </th>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Date
+      </th>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Item-Link
+      </th>
+    </tr>
+  </thead>
+  <tbody class="bg-white divide-y divide-gray-200">
+    {{ range where .Site.RegularPages "Type" "items" }}
+    <tr>
+      <td class="px-6 py-4 whitespace-nowrap">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 h-10 w-10">
+            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60" alt="">
+          </div>
+          <div class="ml-4">
+            <div class="text-sm font-medium text-gray-900">
+              {{ .Params.identifier }}
+            </div>
+          </div>
+        </div>
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap">
+        <div class="text-sm text-gray-900 underline"><a href="{{ .Permalink }}" class="text-indigo-600 hover:text-indigo-900">{{ .Title }}</a></div>
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap">
+        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+          {{ .Params.creator }}
+        </span>
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        {{ .Date.Format "2006-01-02" }}
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        {{ .File.Path }}
+      </td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>

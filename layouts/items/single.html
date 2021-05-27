@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<div class="flex flex-wrap -mx-4 -mb-4 md:mb-0">
+  <div class="w-full md:w-1/4 px-4 py-4 mb-4 md:mb-0">
+  	{{ partial "app/browse-aside.html" . }}
+  </div>
+  <div class="w-full md:w-3/4 px-4 py-4 mb-4 md:mb-0">
+  	{{ partial "app/browse-breadcrumb.html" . }}
+  	<h1>Items</h1>
+  	<article class="prose lg:prose-xl">
+		<h1 class="text-4xl">
+		  	{{ .Title }}
+		</h1>
+			{{ .Content }}
+			{{ .Params.Identifier }}
+			{{ .Params.Author }}
+			{{ .Params.Creator}}
+			{{ .Params.Tags }}
+			{{ .Params.Link }}
+			{{ .Params.Image | absURL }}
+		<img class="h-40 rounded w-full object-cover object-center mb-6" src="{{ .Params.Image | absURL }}" alt="content">
+	</article>
+  </div>
+</div>
+
+{{ end }}      
