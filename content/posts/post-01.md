@@ -1,8 +1,9 @@
 ---
-title: 두 번째 블로그 제목입니다.
+title: 기본 Post 레이아웃
+date: 2021-01-01
 ---
 
-## Overview
+## 기본 Post 레이아웃
 
 ### Philosophy
 
