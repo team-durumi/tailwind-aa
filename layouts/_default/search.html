@@ -1,29 +1,57 @@
 {{ define "main" }} <!-- https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae -->
 
-<div class="search">
-  <header>
-    <h1>{{ .Title }}-content(items + posts)</h1>
-    {{/* partial "debugprint.html" (site.GetPage "/search") */}}
-  </header>
-
-  <form action="{{ .Permalink }}">
-    <input class="w-full h-16 px-3 rounded mb-8 focus:outline-none focus:shadow-outline text-xl px-8 shadow-lg" id="search-query" name="q"/>
-  </form>
-
-  <div id="search-results"></div>
+<div class="search" >
+  <div class="container px-8 py-8 relative mx-auto bg-blue-600 text-gray-100">
+    <header>
+      <h1 class="text-2xl">검색 키워드 : 맥주, 소주, 약주, 위스키</h1>
+      {{/* partial "debugprint.html" (site.GetPage "/search") */}}
+    </header>
+    <form action="{{ .Permalink }}" class="border-2 border-gray-300 bg-white h-10 rounded-lg text-gray-800 focus:outline-none">
+      <button type="submit" class="relative">
+        <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+          viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+          width="512px" height="512px">
+          <path
+            d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+        </svg>
+      </button>
+      <input class="h-8 px-5 py-2 rounded-lg text-2xl" id="search-query" name="q"/>
+    </form>
+  </div>
+  <div class="container px-4 py-4 relative mx-auto" id="search-results"></div>
 </div>
 
-<template id="search-result-template"><div class="search_summary">
-  <h2 class="post-title no-text-decoration"><a class="search_link search_title" href=""></a></h2>
-  <p><em class="search_snippet"></em></p>
-  <small>
-    <table>
-      <tr class="search_iftags"><td><strong>Tags</strong></td><td class="search_tags"></td></tr>
-      <tr class="search_ifcategories"><td><strong>Categories</strong></td><td class="search_categories"></td></tr>
-      <tr class="search_ifcontents"><td><strong>Contents</strong></td><td class="search_contents"></td></tr>
-    </table>
-  </small>
-  </div></template>
+  <template id="search-result-template" >
+    <div class="flex flex-wrap -m-4">
+      <div class="search_summary w-full p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <!-- <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"> -->
+          <!-- <p class="search_iftitle" ></p> -->
+          <h2 class="post-title no-text-decoration text-blue-500 text-2xl"><a class="search_link search_title" href=""></a></h2>
+            <p><em class="search_snippet"></em></p>
+            <p class="post-title no-text-decoration"><a class="search_link search_title" href=""></a></p>
+            <p class="search_iftags text-blue-500" ><strong>Tags</strong><em class="search_tags"></em></p>
+            <p class="search_ifcategories"><strong>Categories</strong><p class="search_categories">
+        </div>
+      </div>
+    </div>  
+<!--     <div class="search_summary">
+      <h2 class="post-title no-text-decoration"><a class="search_link search_title" href=""></a></h2>
+      <p><em class="search_snippet"></em></p>
+      <p class="search_link search_title"><a class="search_link search_title" href="">제목</a></p>
+      <p class="search_iftags"><strong>Tags</strong>
+      <p class="search_tags"></p></p>
+
+        <table class="border-2 border-gray-300">
+          <tr class="search_link search_title"><td><strong>링크</strong></td><td><a class="search_link search_title" href="">제목</a></td></tr>
+          <tr class="search_iftags"><td><strong>Tags</strong></td><td class="search_tags"></td></tr>
+          <tr class="search_ifcategories"><td><strong>Categories</strong></td><td class="search_categories"></td></tr>
+          <tr class="search_ifsummary"><td><strong>Contents</strong></td><td class="search_ifsummary"></td></tr>
+        </table>
+      </div> -->
+  </template>
+
 {{ end }}
 
 {{ define "footer" }}
