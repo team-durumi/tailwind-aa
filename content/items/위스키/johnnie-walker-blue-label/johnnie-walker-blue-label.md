@@ -10,5 +10,5 @@ creator: ""
 tags: 위스키
 created-date: ""
 link: "http://www.peace.com"
-image: "/items/aa/위스키/johnnie walker blue label.jpg"
+image: "/items/위스키/johnnie-walker-blue-label/johnnie-walker-blue-label.jpg"
 ---
