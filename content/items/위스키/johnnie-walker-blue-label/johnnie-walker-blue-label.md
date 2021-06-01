@@ -3,7 +3,7 @@ author: "CCWPS"
 date: 2020-11-21T04:35:03Z
 draft: false
 identifier: "aa-0004"
-title: johnnie-walker-blue-label
+title: Johnnie Walker Blue Label
 weight: 10
 author: "ccwps"
 creator: ""
