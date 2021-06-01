@@ -4,7 +4,7 @@ title = "tailwind-aa-0.1"
 theme = ["tailwind-aa-theme", "hugo-debugprint", "hugo-search-fuse-js"]
 disableKinds = ["taxonomy", "term"]
 
-paginate = 4
+paginate = 6
 
 [build]
 # Used by PurgeCSS
