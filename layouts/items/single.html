@@ -1,15 +1,14 @@
 {{ define "main" }}
-
-<div class="flex flex-wrap -mx-4 -mb-4 md:mb-0">
-  <div class="w-full md:w-1/4 px-4 py-4 mb-4 md:mb-0 bg-gray-100">
+<div class="flex flex-wrap -mb-4 md:mb-0">
+  <div class="w-full md:w-1/4 px-5 py-5 mb-4 md:mb-0 bg-gray-100">
   	{{ partial "app/browse-aside.html" . }}
   </div>
-  <div class="w-full md:w-3/4 px-4 py-4 mb-4 md:mb-0 bg-gray-100">
+  <div class="w-full md:w-3/4 py-5 mb-4 md:mb-0 bg-gray-100">
   	{{ partial "app/browse-breadcrumb.html" . }}
   	<!-- item metadata  -->
 	<div class="bg-white overflow-hidden sm:rounded-lg">
-	  <div class="px-3 py-4 sm:px-6">
-	    <h3 class="text-4xl leading-6 font-medium text-gray-900 mb-4">
+	  <div class="px-5 py-5 sm:px-6">
+	    <h3 class="text-4xl leading-6 font-medium text-gray-900 py-5 mb-4">
 	      {{ .Title }}
 	    </h3>
 	    <!-- Component IMG / PDF / Youtube -->
@@ -20,7 +19,7 @@
 	  
 	  <div class="border-t border-gray-200">
 	    <dl>
-	      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+	      <div class="bg-gray-50 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 	        <dt class="text-sm font-medium text-gray-500">
 	          Reference code(s)
 	        </dt>
@@ -28,7 +27,7 @@
 	         {{ .Params.Identifier }}
 	        </dd>
 	      </div>
-	      <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+	      <div class="bg-white px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 	        <dt class="text-sm font-medium text-gray-500">
 	          Title
 	        </dt>
@@ -36,7 +35,7 @@
 	          {{ .Title }}
 	        </dd>
 	      </div>
-	      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+	      <div class="bg-gray-50 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 	        <dt class="text-sm font-medium text-gray-500">
 	          Date(s)
 	        </dt>
@@ -44,7 +43,7 @@
 	          {{ .Date }}
 	        </dd>
 	      </div>
-	      <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+	      <div class="bg-white px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 	        <dt class="text-sm font-medium text-gray-500">
 	          Level of description
 	        </dt>
@@ -52,7 +51,7 @@
 	          맥주(Group)
 	        </dd>
 	      </div>
-	      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+	      <div class="bg-gray-50 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 	        <dt class="text-sm font-medium text-gray-500">
 	          Extent and medium of the unit of description (quantity, bulk, or size)
 	        </dt>
@@ -60,7 +59,7 @@
 	          사진 1장
 	        </dd>
 	      </div>
-	      <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+	      <div class="bg-white px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 	        <dt class="text-sm font-medium text-gray-500">
 	          Name of creator(s)
 	        </dt>
@@ -68,7 +67,7 @@
 	          {{ .Params.Creator}}
 	        </dd>
 	      </div>
-	      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+	      <div class="bg-gray-50 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 	        <dt class="text-sm font-medium text-gray-500">
 	          Scope and content
 	        </dt>
@@ -76,7 +75,7 @@
 	          {{ .Content }}
 	        </dd>
 	      </div>
-			<div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			<div class="bg-white px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 	        <dt class="text-sm font-medium text-gray-500">
 	         Thesaurus
 	        </dt>
@@ -84,7 +83,7 @@
 	          {{ .Params.Tags }}
 	        </dd>
 	      </div>	      	      	      
-	      <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+	      <div class="bg-white px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 	        <dt class="text-sm font-medium text-gray-500">
 	          Existence and location of originals
 	        </dt>
@@ -129,5 +128,4 @@
 	</div>
   </div>
 </div>
-
 {{ end }}      
