@@ -2,7 +2,10 @@ baseURL = "https://aa.durumi.io"
 languageCode = "kr-ko"
 title = "tailwind-aa-0.1"
 theme = ["tailwind-aa-theme", "hugo-debugprint", "hugo-search-fuse-js"]
-disableKinds = ["taxonomy", "term"]
+
+[taxonomies]
+  tag = "tags"
+  creator = "creators"
 
 paginate = 6
 
@@ -22,11 +25,6 @@ writeStats = true
   weight = 1
 
   [[menu.main]]
-  name = "Components"
-  URL = "marketing"
-  weight = 6
-
-  [[menu.main]]
   name = "About"
   URL = "about"
   weight = 2
@@ -37,14 +35,36 @@ writeStats = true
   weight = 3
 
   [[menu.main]]
-  name = "Blog"
-  URL = "posts"
+  name = "Search"
+  URL = "search"
+  weight = 4
+
+  [[menu.main]]
+  name = "Tags"
+  URL = "tags"
   weight = 5
 
   [[menu.main]]
-  name = "Search"
-  URL = "search"
-  weight = 4  
+  name = "Creators"
+  URL = "creators"
+  weight = 6
+
+  [[menu.main]]
+  name = "Blog"
+  URL = "posts"
+  weight = 7
+
+  [[menu.main]]
+  name = "Components"
+  URL = "marketing"
+  weight = 8
+
+  [[menu.main]]
+  name = "Sitemap.xml"
+  URL = "sitemap.xml"
+  weight = 9
+
+
 
   ############# footer menu #############
   [[menu.footer]]
