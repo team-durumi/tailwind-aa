@@ -3,7 +3,7 @@
 ###################### user/org information #####################
 user:
   title : Team Durumi
-  tagLine : Durumi는 시민사회영역과 IT개발 영역에서 10년 이상의 경력을 가진 구성원 중심으로 구성된 5명의 개발팀입니다.
+  tagLine : Team Durumi는 시민사회영역과 IT개발 영역에서 10년 이상의 경력을 가진 구성원 중심으로 구성된 5명의 개발팀입니다.
   tel : 02-0000-0000
   fax : 02-0000-0000
   email : team@durumi.io
@@ -20,6 +20,7 @@ user:
     github : http://github.com/team-durumi
     url : http://github.com/team-durumi
     caption: Github
+###################### 사용하지 않는 링크는 제거하면 됩니다. #####################    
     fb : http://facebook.com
     tw : http://twitter.com
     instagram : http://instagram.com
