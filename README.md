@@ -21,3 +21,18 @@ hugo server -D
 
 ## theme component 를 업데이트 해주세요. 
 - tailwind-aa-theme 도 아직은 성장중이에요. 새로 만든 component가 있다면 테마에 반영해주면 다음 프로젝트에 도움이 됩니다.
+
+
+# Build Capacity 
+
+## 2배 분량 (items*20 )
+- ```content/items/dummy``` 폴더에 2G 분량으로 복제 (115 ms -> Built in 20310 ms)
+- Pages            |  411  
+- Paginator pages  |   37  
+- Non-page files   | 1271 
+
+## 4배 분량 (items*40 )
+- ```content/items/dummy``` 폴더에 2G 분량으로 복제 (115 ms -> Built in 75280 ms)
+- Pages            |  779  
+- Paginator pages  |   74  
+- Non-page files   | 2511   
