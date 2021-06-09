@@ -22,6 +22,11 @@ hugo server -D
 ## theme component 를 업데이트 해주세요. 
 - tailwind-aa-theme 도 아직은 성장중이에요. 새로 만든 component가 있다면 테마에 반영해주면 다음 프로젝트에 도움이 됩니다.
 
+## netlify CMS
+- https://www.netlifycms.org/docs/hugo/#creating-a-new-site 앞 부분은 스킵
+- ```static/admin``` 폴더에 index.html과 config.yml 을 추가합니다. (git-gateway 를 수정하지 않는다.)
+- Front 경로 접근할 때 Netlify Identity를 확인할 수 있는 스크립트도 반드시 추가한다. 
+
 
 # Build Capacity 
 
