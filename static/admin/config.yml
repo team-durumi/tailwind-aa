@@ -4,10 +4,10 @@ backend:
 media_folder: static/img # 미디어파일이 static 경로에 쌓이면 aa 컨셉과 맞지는 않음
 public_folder: /img
 collections:
-  - name: 'items'
+  - name: 'item'
     label: 'Item'
     folder: 
-      - 'content/items'
+      - 'content/item'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
