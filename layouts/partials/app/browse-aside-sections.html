@@ -1,0 +1,25 @@
+<!-- section 구조로 기본적인 탐색 구조를 뿌려봅니다. -->
+<ul class="menu">
+  {{ with .Site.GetPage "/" }}
+    {{ range where .Sections.ByTitle "Type" "items" }}
+        <li>
+          <a href="{{.Permalink}}"><div class="text-blue-600">{{ .Title }}▶</a>
+          {{ $child_pages := union .Sections .Pages }}
+          <ul class="mx-4">
+            {{ range $child_pages.ByTitle }}
+              <li>
+                <a href="{{.Permalink}}">
+                  <div class="text-red-600">{{ .Title }}▶</div>
+                  <hr>
+                  {{ if or (.Sections) (.Pages) }}
+                  <div class="right-arrow"></div>
+                  {{ end }}
+                </a>
+                {{ partial "app/browse-aside-recursive.html" . }}
+              </li>
+            {{ end }}
+          </ul>
+        </li>
+    {{ end }}
+  {{ end }}
+</ul>
