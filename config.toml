@@ -1,6 +1,6 @@
 baseURL = "https://aa.durumi.io"
 languageCode = "kr-ko"
-title = "tailwind-aa-0.1"
+title = "Durumi-AA"
 theme = ["tailwind-aa-theme", "hugo-debugprint", "hugo-search-fuse-js"]
 
 [taxonomies]
@@ -14,7 +14,7 @@ paginate = "5"
 writeStats = true
 
 [permalinks]
-  items = "/:title/"
+  items = "/:section/:sections[last]/:title/"
 
 
 [menu]
