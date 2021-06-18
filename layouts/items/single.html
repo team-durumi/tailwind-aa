@@ -6,7 +6,7 @@
 	  <div class="w-full md:w-3/4 pt-5 pb-20 mb-4 md:mb-0 bg-gray-100">
 	  	{{ partial "app/browse-breadcrumb.html" . }}
 	  <!-- item metadata  -->
-		<div class="bg-white overflow-hidden sm:rounded-lg">
+		<div class="bg-white overflow-hidden sm:rounded-lg mb-4">
 		  <div class="px-5 py-5 sm:px-6">
 		    <h3 class="text-4xl leading-6 font-medium text-gray-900 py-5 mb-4">
 		      {{ .Title }}
@@ -14,9 +14,9 @@
 		    <!-- item object IMG / PDF / Youtube -->
 		    <div class="mt-1 max-w-2xl">
 		    	{{ if .Params.image }}		
-		      	<img class="h-full rounded w-full object-cover object-center mb-6" src="{{ .Params.Image | absURL }}" alt="item object">
+		      	<img class="h-full rounded w-1/2 object-cover object-center mb-6" src="{{ .Params.Image | absURL }}" alt="item object">
 		    	{{ else }}
-		    		<img class="h-full rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/462x384" alt="item object">
+		    		<img class="h-full rounded w-1/2 object-cover object-center mb-6" src="https://dummyimage.com/462x384" alt="item object">
 		    	{{ end }}
 		    </div>
 		  </div>
@@ -131,7 +131,9 @@
 			    {{ end }}  
 		    </dl>
 		  </div>
+
 		</div>
+		{{ partial "app/related-contents.html" . }}
 	  </div>
 	</div>
 {{ end }}      

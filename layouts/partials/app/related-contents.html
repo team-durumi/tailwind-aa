@@ -1,0 +1,27 @@
+<section class="text-gray-600 body-font bg-white overflow-hidden sm:rounded-lg">
+  <div class="container px-5 py-5 mx-auto">
+    <div class="flex flex-col text-start w-full">
+      <h1 class="text-2xl font-medium title-font pb-5 text-gray-900">관련자료</h1>
+    </div>
+    {{ $related := .Site.RegularPages.Related . | first 5 }}
+    {{ with $related }}
+      <div class="flex flex-wrap -m-4">
+        {{ range . }}
+          <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              {{ if .Params.image }}    
+                <img class="flex-shrink-0 rounded-sm w-auto h-auto object-cover object-center mb-4" src="{{ .Params.Image | absURL }}" alt="item object">
+              {{ else }}
+                <img class="flex-shrink-0 rounded-sm w-auto h-auto object-cover object-center mb-4" src="https://dummyimage.com/270x270" alt="item object">
+              {{ end }}
+              <div class="w-full text-left">
+                <h2 class="title-font font-medium text-lg text-gray-900 text-left"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <p class="mb-4 text-left">{{ .Content }}</p>
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+   {{ end }}   
+  </div>
+</section>
