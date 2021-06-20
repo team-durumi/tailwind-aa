@@ -14,7 +14,7 @@ paginate = "10"
 writeStats = true
 
 [permalinks]
-  items = "/:section/:sections[last]/:title/"
+  items = "/:sections/:title/"
 
 
 [menu]
