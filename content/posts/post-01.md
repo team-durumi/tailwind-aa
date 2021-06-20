@@ -3,6 +3,37 @@ title: 기본 Post 레이아웃
 date: 2021-01-01
 ---
 
+## Shortcode
+
+### Youtube
+
+{{< youtube id="7nYimlOROoE" autoplay="true" >}}
+
+### Instagram
+{{< instagram BWNjjyYFxVx >}}
+
+### Tweeter
+{{< tweet 877500564405444608 >}}
+
+### Github gist
+{{< gist spf13 7896402 >}}
+
+### Vimeo
+
+{{< vimeo 146022717 >}}
+
+### highlight
+{{< highlight html >}}
+<section id="main">
+  <div>
+   <h1 id="title">{{ .Title }}</h1>
+    {{ range .Pages }}
+        {{ .Render "summary"}}
+    {{ end }}
+  </div>
+</section>
+{{< /highlight >}}
+
 ## 기본 Post 레이아웃
 
 ### Philosophy
