@@ -1,0 +1,58 @@
+<table class="w-auto h-auto divide-y divide-gray-200">
+  <thead class="bg-gray-50">
+    <tr>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Identifier
+      </th>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Title
+      </th>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Creator
+      </th>
+<!--       <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Date
+      </th>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Item-Link
+      </th> -->
+    </tr>
+  </thead>
+  <tbody class="bg-white divide-y divide-gray-200">
+    {{ $projects := partial "app/projects-data.html" . }}
+    {{- range $projects -}}
+    <tr>
+      <td class="px-6 py-4 whitespace-nowrap">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 h-10 w-10">
+            {{ if .Params.image }}
+              <img class="h-10 w-10 rounded" src="{{ .Params.image | absURL }}" alt="item image">
+            {{ else }}
+              <img class="h-10 w-10 rounded" src="https://dummyimage.com/256x256" alt="item image">
+            {{ end }}
+          </div>
+          <div class="ml-4">
+            <div class="text-sm font-medium text-gray-900">
+              {{ .reference_code }}
+            </div>
+          </div>
+        </div>
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap">
+        <div class="text-sm text-gray-900 underline"><a href="{{ .Permalink }}" class="text-indigo-600 hover:text-indigo-900">{{ .title_ko }}</a></div>
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap">
+        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+          {{ .subjects }}
+        </span>
+      </td>
+      <!-- <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        {{ .description_en }}
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        {{ .subjects }}
+      </td> -->
+    </tr>
+    {{- end -}}
+  </tbody>
+</table>
