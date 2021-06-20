@@ -17,6 +17,8 @@
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
     <meta name="viewport" content="width=device-width">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   </head>
   {{ partial "basic/header_logo.html" . }}
   <body>
@@ -28,6 +30,4 @@
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
   {{ end }}
   {{ partial "basic/footer-wide.html" . }}
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </html>

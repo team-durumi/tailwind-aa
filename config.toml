@@ -7,7 +7,7 @@ theme = ["tailwind-aa-theme", "hugo-debugprint", "hugo-search-fuse-js"]
   tag = "tags"
   creator = "creators"
 
-paginate = "5"
+paginate = "10"
 
 [build]
 # Used by PurgeCSS
@@ -30,44 +30,49 @@ writeStats = true
   weight = 2
 
   [[menu.main]]
-  name = "Browse"
+  name = "Browse(content)"
   URL = "items"
   weight = 3
 
   [[menu.main]]
+  name = "Browse(csv)"
+  URL = "browse"
+  weight = 4  
+
+  [[menu.main]]
   name = "Search"
   URL = "search"
-  weight = 4
+  weight = 5
 
   [[menu.main]]
   name = "Tags"
   URL = "tags"
-  weight = 5
+  weight = 6
 
   [[menu.main]]
   name = "Creators"
   URL = "creators"
-  weight = 6
+  weight = 7
 
   [[menu.main]]
   name = "Blog"
   URL = "posts"
-  weight = 7
+  weight = 8
 
   [[menu.main]]
   name = "Components"
   URL = "marketing"
-  weight = 8
+  weight = 9
 
   [[menu.main]]
   name = "Whisky Collection"
   URL = "/collection-whisky"
-  weight = 9 
+  weight = 10 
 
   [[menu.main]]
   name = "Sitemap.xml"
   URL = "sitemap.xml"
-  weight = 10
+  weight = 11
 
 
 
