@@ -5,31 +5,36 @@
 {{ define "main" }}
 
 <div class="search" >
-  <div class="px-96 py-8 relative mx-auto bg-blue-600 text-gray-100">
+  <div class="px-24 md:px-64 pt-12 pb-24 relative mx-auto bg-blue-600 text-gray-100">
     <header>
-      <h1 class="text-2xl">검색 키워드 : 맥주, 소주, 약주, 위스키</h1>
-      {{/* partial "debugprint.html" (site.GetPage "/search") */}}
     </header>
-    <form action="{{ .Permalink }}" class="border-2 border-gray-300 bg-white h-10 rounded-lg text-gray-800 focus:outline-none">
-      <button type="submit" class="relative">
-        <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+    <form action="{{ .Permalink }}" class="mt-2 border-2 border-blue-600 bg-white h-14 rounded-lg text-gray-900 items-center focus:outline-none">
+      <input class="ml-5 w-1/2 md:w-2/3 py-1 rounded-lg text-2xl" id="search-query" name="q"/>
+      <button type="submit" class="px-2 py-2">
+        <svg class="text-gray-600 h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
           viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
           width="512px" height="512px">
           <path
             d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
         </svg>
-      </button>
-      <input class="h-8 px-5 py-2 rounded-lg text-2xl" id="search-query" name="q"/>
+      </button>   
     </form>
   </div>
-  <div class="container px-4 py-4 relative mx-auto" id="search-results"></div>
+  <div class="flex flex-wrap -mb-4 md:mb-0">
+    <div class="w-full md:w-1/4 px-5 py-5 mb-4 md:mb-0 bg-gray-100">
+        <div class="bg-white px-5 py-5 rounded-lg">search-aside</div>     
+    </div>
+    <div class="w-full h-full md:w-3/4 py-5 mb-4 md:mb-0 bg-gray-100">
+      <div class="px-4 py-4 mb-40 relative mx-auto" id="search-results"></div>
+    </div>
+  </div>    
 </div>
 
   <template id="search-result-template" >
     <div class="flex flex-wrap -m-4">
       <div class="search_summary w-full p-4">
-        <div class="bg-gray-100 p-6 rounded-lg">
+        <div class="bg-white border-2 p-6 rounded-lg">
           <!-- <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"> -->
           <!-- <p class="search_iftitle" ></p> -->
           <h2 class="post-title no-text-decoration text-blue-500 text-2xl"><a class="search_link search_title" href=""></a></h2>
@@ -37,23 +42,14 @@
             <p class="post-title no-text-decoration"><a class="search_link search_title" href=""></a></p>
             <p class="search_iftags text-blue-500" ><strong>Tags</strong><em class="search_tags"></em></p>
             <p class="search_ifcategories"><strong>Categories</strong><p class="search_categories">
+            <p class="search_ifcreators"><strong>Creators</strong><p class="search_creators">
+            <p class="search_ifvenues"><strong>venues</strong><p class="search_venues">
+            <p class="search_ifsubjects"><strong>subjects</strong><p class="search_subjects">
+            <p class="search_ifsources"><strong>sources</strong><p class="search_sources">
+            <p class="search_ifsummary"><strong>Body Contents</strong><p class="search_summary">     
         </div>
       </div>
-    </div>  
-<!--     <div class="search_summary">
-      <h2 class="post-title no-text-decoration"><a class="search_link search_title" href=""></a></h2>
-      <p><em class="search_snippet"></em></p>
-      <p class="search_link search_title"><a class="search_link search_title" href="">제목</a></p>
-      <p class="search_iftags"><strong>Tags</strong>
-      <p class="search_tags"></p></p>
-
-        <table class="border-2 border-gray-300">
-          <tr class="search_link search_title"><td><strong>링크</strong></td><td><a class="search_link search_title" href="">제목</a></td></tr>
-          <tr class="search_iftags"><td><strong>Tags</strong></td><td class="search_tags"></td></tr>
-          <tr class="search_ifcategories"><td><strong>Categories</strong></td><td class="search_categories"></td></tr>
-          <tr class="search_ifsummary"><td><strong>Contents</strong></td><td class="search_ifsummary"></td></tr>
-        </table>
-      </div> -->
+    </div>
   </template>
 
 {{ end }}
@@ -84,6 +80,6 @@
 
   <!-- Below works *only if* this theme component is named "hugo-search-fuse-js"
        AND *if* the themesDir is left at the default value of "themes".  -->
-  {{ $search_js_md5 := (readFile "themes/hugo-search-fuse-js-aa/static/js/search.js" | md5) }}
+  {{ $search_js_md5 := (readFile "themes/hugo-search-fuse-js/static/js/search.js" | md5) }}
   <script src={{ printf "%s?%s" ("js/search.js" | absURL) $search_js_md5 }}></script>
 {{ end }}
