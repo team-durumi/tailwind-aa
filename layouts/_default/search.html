@@ -1,7 +1,11 @@
-{{ define "main" }} <!-- https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae -->
+{{ define "header" }}
+  {{ partial "basic/header-search.html" . }}
+{{ end }}
+
+{{ define "main" }}
 
 <div class="search" >
-  <div class="container px-8 py-8 relative mx-auto bg-blue-600 text-gray-100">
+  <div class="px-96 py-8 relative mx-auto bg-blue-600 text-gray-100">
     <header>
       <h1 class="text-2xl">검색 키워드 : 맥주, 소주, 약주, 위스키</h1>
       {{/* partial "debugprint.html" (site.GetPage "/search") */}}
@@ -80,6 +84,6 @@
 
   <!-- Below works *only if* this theme component is named "hugo-search-fuse-js"
        AND *if* the themesDir is left at the default value of "themes".  -->
-  {{ $search_js_md5 := (readFile "themes/hugo-search-fuse-js/static/js/search.js" | md5) }}
+  {{ $search_js_md5 := (readFile "themes/hugo-search-fuse-js-aa/static/js/search.js" | md5) }}
   <script src={{ printf "%s?%s" ("js/search.js" | absURL) $search_js_md5 }}></script>
 {{ end }}
