@@ -1,6 +1,6 @@
 ---
 lastmod: 2021-06-11
-title: level2-1
+title: 2차 세계대전
 type: page
 ---
 

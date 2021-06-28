@@ -1,6 +1,6 @@
 ---
 lastmod: 2021-06-11
-title: level2-2
+title: 베트남전쟁
 type: page
 ---
 
