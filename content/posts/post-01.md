@@ -9,10 +9,7 @@ date: 2021-01-01
 
 {{< youtube id="7nYimlOROoE" autoplay="true" >}}
 
-### Instagram
-{{< instagram BWNjjyYFxVx >}}
-
-### Tweeter
+### Twitter
 {{< tweet 877500564405444608 >}}
 
 ### Github gist
