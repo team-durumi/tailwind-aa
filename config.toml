@@ -1,7 +1,7 @@
 baseURL = "https://aa.durumi.io"
 languageCode = "kr-ko"
 title = "Durumi-AA"
-theme = ["hugo-search-fuse-js-aa", "tailwind-aa-theme", "hugo-book","hugo-debugprint" ]
+theme = ["hugo-search-fuse-js", "tailwind-aa-theme","hugo-debugprint" ]
 
 [taxonomies]
   tag = "tags"
