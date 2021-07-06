@@ -1,13 +1,17 @@
 baseURL = "https://aa.durumi.io"
 languageCode = "kr-ko"
 title = "Durumi-AA"
-theme = ["tailwind-aa-theme", "hugo-debugprint", "hugo-search-fuse-js"]
+theme = ["hugo-search-fuse-js-aa", "tailwind-aa-theme", "hugo-book","hugo-debugprint" ]
 
 [taxonomies]
   tag = "tags"
+  subject = "subjects"
   creator = "creators"
+  venue = "venues"
+  source = "sources"
 
 paginate = "10"
+
 
 [build]
 # Used by PurgeCSS
@@ -45,34 +49,39 @@ writeStats = true
   weight = 5
 
   [[menu.main]]
+  name = "Search(ts)"
+  URL = "https://gifted-cray-fb4a47.netlify.app/"
+  weight = 6 
+
+  [[menu.main]]
   name = "Tags"
   URL = "tags"
-  weight = 6
+  weight = 7
 
   [[menu.main]]
   name = "Creators"
   URL = "creators"
-  weight = 7
+  weight = 8
 
   [[menu.main]]
   name = "Blog"
   URL = "posts"
-  weight = 8
+  weight = 9
 
   [[menu.main]]
   name = "Components"
   URL = "marketing"
-  weight = 9
+  weight = 10
 
   [[menu.main]]
   name = "Whisky Collection"
   URL = "/collection-whisky"
-  weight = 10 
+  weight = 11 
 
   [[menu.main]]
   name = "Sitemap.xml"
   URL = "sitemap.xml"
-  weight = 11
+  weight = 12
 
 
 
