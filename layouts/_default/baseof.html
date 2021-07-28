@@ -19,19 +19,18 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    {{ block "header" . }}
-    
-    {{ end }}
   </head>
   <body>
+      {{ block "header" . }}{{ end }}
     <div class="xl:mx-auto lg:mx-auto md:mx-auto sm:mx-auto">
       {{ block "main" . }}{{ end }}
     </div>
   </body>
   {{ block "footer" . }}
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ partial "basic/footer-wide.html" . }}
   {{ end }}
-  {{ partial "basic/footer-wide.html" . }}
+  
 </html>
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0d1b3c39e89542b9b4c30a9e38e97eff"}'></script>
