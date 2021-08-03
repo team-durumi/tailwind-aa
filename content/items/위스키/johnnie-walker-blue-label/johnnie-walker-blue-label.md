@@ -1,14 +1,22 @@
 ---
-author: "CCWPS"
-date: 2020-11-21T04:35:03Z
-draft: false
-identifier: "aa-0004"
-title: Johnnie Walker Blue Label
-weight: 10
-author: "ccwps"
-creator: ""
-tags: 위스키
-created-date: ""
-link: "http://www.peace.com"
-image: "/items/위스키/johnnie-walker-blue-label/johnnie-walker-blue-label.jpg"
+reference_code: 
+date: 
+draft: 
+level_of_description: 
+media_type: 
+title: johnnie-walker-blue-label 
+description: 
+weight: 
+modified_at: 
+created_at: 
+link: 
+components: 
+  - "items/위스키/johnnie-walker-blue-label/johnnie-walker-blue-label.jpg"
+tags: 
+creators: 
+subjects: 
+sources: 
+venues: 
+public_access_status: 
+copyright_status: 
 ---

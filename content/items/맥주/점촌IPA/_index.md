@@ -1,6 +1,6 @@
 ---
 lastmod: 
-title: 소주
+title: 점촌IPA
 weight: 
 type: page
 ---

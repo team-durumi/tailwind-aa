@@ -1,16 +1,22 @@
 ---
-author: "Durumi"
-date: 2020-11-23T04:35:03Z
-draft: false
-identifier: "aa-0008"
-title: 1664 Blanc
-weight: 10
-author: "woonjjang"
-creator: "생산자"
-tags: 맥주
-created-date: ""
-link: "http://www.peace.com"
-image: "/items/맥주/1664blanc/IMG_4646.png"
+reference_code: 
+date: 
+draft: 
+level_of_description: 
+media_type: 
+title: 1664BLANC 
+description: 
+weight: 
+modified_at: 
+created_at: 
+link: 
+components: 
+  - "items/맥주/1664blanc/1664BLANC.png"
+tags: 
+creators: 
+subjects: 
+sources: 
+venues: 
+public_access_status: 
+copyright_status: 
 ---
-
-1664 Blanc 은 맛있는 맥주입니다. 그 맥주는 부드러운 맛입니다.

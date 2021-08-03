@@ -1,6 +1,6 @@
 ---
 lastmod: 
-title: 소주
+title: 김포특주
 weight: 
 type: page
 ---

@@ -4,14 +4,14 @@ date:
 draft: 
 level_of_description: 
 media_type: 
-title: 하얼빈 
+title: 점촌IPA 
 description: 
 weight: 
 modified_at: 
 created_at: 
 link: 
 components: 
-  - "items/맥주/하얼빈/하얼빈.png"
+  - "items/맥주/점촌IPA/점촌IPA.jpg"
 tags: 
 creators: 
 subjects: 

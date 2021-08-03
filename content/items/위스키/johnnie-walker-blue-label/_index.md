@@ -1,6 +1,6 @@
 ---
 lastmod: 
-title: 소주
+title: johnnie-walker-blue-label
 weight: 
 type: page
 ---

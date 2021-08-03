@@ -1,6 +1,6 @@
 ---
 lastmod: 
-title: 소주
+title: 노주탄
 weight: 
 type: page
 ---

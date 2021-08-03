@@ -1,6 +1,6 @@
 ---
 lastmod: 
-title: 소주
+title: 화요
 weight: 
 type: page
 ---
