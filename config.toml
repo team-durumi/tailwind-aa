@@ -24,43 +24,43 @@ writeStats = true
 [menu]
 
   [[menu.main]]
-  name = "Home"
-  URL = "/"
-  weight = 1
-
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight = 2
-
-  [[menu.main]]
   name = "Browse(content)"
   URL = "items"
-  weight = 3
-
-  [[menu.main]]
-  name = "Browse(csv)"
-  URL = "browse"
-  weight = 4  
+  weight = 1
 
   [[menu.main]]
   name = "Search"
   URL = "search"
-  weight = 5
+  weight = 2
 
   [[menu.main]]
-  name = "Search(ts)"
-  URL = "https://gifted-cray-fb4a47.netlify.app/"
-  weight = 6 
+  name = "Search(sample)"
+  URL = "https://ts-ccwps.durumi.io"
+  weight = 3
 
   [[menu.main]]
   name = "Tags"
   URL = "tags"
-  weight = 7
+  weight = 4
 
   [[menu.main]]
   name = "Creators"
   URL = "creators"
+  weight = 5  
+
+  [[menu.main]]
+  name = "Subjects"
+  URL = "subjects"
+  weight = 6  
+
+  [[menu.main]]
+  name = "Sources"
+  URL = "sources"
+  weight = 7
+
+  [[menu.main]]
+  name = "Venues"
+  URL = "venues"
   weight = 8
 
   [[menu.main]]
@@ -72,18 +72,6 @@ writeStats = true
   name = "Components"
   URL = "marketing"
   weight = 10
-
-  [[menu.main]]
-  name = "Whisky Collection"
-  URL = "/collection-whisky"
-  weight = 11 
-
-  [[menu.main]]
-  name = "Sitemap.xml"
-  URL = "sitemap.xml"
-  weight = 12
-
-
 
   ############# footer menu #############
   [[menu.footer]]

@@ -1,5 +1,5 @@
 {{ define "header" }}
-  {{ partial "basic/header_logo.html" . }}
+  {{ partial "basic/header-logo.html" . }}
 {{ end }}
 
 {{ define "main" }}
@@ -47,7 +47,7 @@
       </div>
       <div x-show="openTab === 3">
         {{ partial "marketing/faq.html" . }}
-		    {{ partial "marketing/faq_accordion.html" . }}
+		    {{ partial "marketing/faq-accordion.html" . }}
 	    </div>
   	  <div x-show="openTab === 4">
   	  	{{ partial "marketing/cta.html" . }}<br>
@@ -59,7 +59,7 @@
   	  <div x-show="openTab === 6">
   	  	{{ partial "basic/header.html" . }}
   	  	{{ partial "basic/header_new.html" . }}
-  	  	{{ partial "basic/header_logo.html" . }}
+  	  	{{ partial "basic/header-logo.html" . }}
         {{ partial "basic/footer-wide.html" . }}
   	  	{{ partial "basic/footer.html" . }}
   	  </div>

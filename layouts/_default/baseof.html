@@ -16,6 +16,19 @@
     {{ end }}
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
     <meta name="viewport" content="width=device-width">
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+
+      // Whenever the user explicitly chooses dark mode
+      localStorage.theme = 'dark'
+
+      // Whenever the user explicitly chooses to respect the OS preference
+      localStorage.removeItem('theme')
+    </script>  
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>

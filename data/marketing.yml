@@ -100,7 +100,7 @@ featuredItems:
       identifier: aa-0.1
       author: 강성현, 전갑생
       creator: 성공회대학교 동아시아연구소
-      url : 
+      url : http://ccwps.durumi.io
 
     - category : 여성운동, 대학생
       title : 전여대협아카이브
@@ -111,7 +111,7 @@ featuredItems:
       identifier: aa-0.1
       author: 디스크립션 작성자
       creator: 일생활균형연구소
-      url :      
+      url : http://jydh.durumi.io
 
     - category : 조직, 사진
       title : 민주노총 사진아카이브
@@ -122,7 +122,15 @@ featuredItems:
       identifier: aa-0.1
       author: 
       creator: 민주노총
-      url :              
+      url : http://kctu-photo.durumi.io         
+
+############################ featured-No ##########################
+featuredNumbers:
+  enable : true
+  title : 냉전평화연구센터 디지털아카이브 
+  subtitle : items 공개현황
+  content : 2021년 현재 아카이브는 아래와 같은 아이템 및 연관 콘텐츠를 제공하고 있습니다. 관련된 아이템들은 직접 확인할 수 있습니다.
+  image : img/durumi.png
 
 ############################ hero-right/left ##########################
 heroRight:
@@ -144,7 +152,7 @@ heroRight:
 
 ############################ two box ##########################
 twobox:
-  title : 2box 설명
+  title : 2box 제목
   firstBox:
     - title : Free 버전
       content : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
@@ -167,22 +175,23 @@ faq:
   listItem:
 
     - question : 아카이브에 포함된 데이터는 어디서 가져오는 것인가요 ?
-      answer : 폴더형태로 저장되어 있는 사용자의 개별 클라우드 서비스(드롭박스, 아마존 S3)와 메타정보가 기록된 공개된 엑셀파일을 디지털아카이브에 노출합니다. 따라서, 완전히 공개된 자료를 처리하는데 특화된 디지털아카이브 솔루션입니다. 
+      answer : 폴더형태로 저장되어 있는 사용자의 개별 클라우드 서비스(드롭박스, 아마존 S3)와 메타정보가 기록된 공개된 엑셀파일을 기준으로 노출합니다. 따라서, 완전히 공개된 자료를 처리하는데 특화된 디지털아카이브 솔루션입니다. 
 
     - question : 관련된 자료들을 기사/논문/영상에 참조하기 위해서는 어떤 규정을 지켜야 하나요 ?
       answer : 현재 보고 있는 기사 / 논문 / 영상은 완전히 공개되어 있는 자료입니다. 기사/논문/영상에 사용할 때 "** 디지털아카이브의 자료"임을 밝히고 사용해주세요. 
 
     - question : 이런 형태의 디지털아카이브를 사용하기 위해서는 웹서버 혹은 데이터베이스가 필요한가요 ?
-      answer : 아닙니다. 현재 사이트는 거대한 HTML 덩어리라고 상상하세요. 해당 HTML에 접근하기 위해서는 최소 사양의 웹서버만 지원되면됩니다. 따라서 Netlify, CloudFlare 같은 서비스를 통해 웹에 공개해 놓습니다. 그래서 무료.
+      answer : 아닙니다. 현재 사이트는 거대한 HTML 덩어리라고 상상하세요. 해당 HTML에 접근하기 위해서는 최소 사양의 웹서버만 지원되면됩니다. 따라서 Netlify, CloudFlare 같은 서비스를 통해 웹에 공개해 놓습니다.
 
     - question : 개발에 걸리는 시간은 어느 정도되나요 ?
-      answer : 실제로 디지털아카이브를 개발하는데 시간은 오래 걸리지 않습니다. 개발팀 기준으로 2day. 사용자가 공개하고자 하는 기록/자료를 정리하는데 드는 시간, 사용자 정보를 정리하는 시간, 디자인을 결정하거나 별도의 기능을 요청하는 경우에 시간이 많이 걸리게 됩니다. 
+      answer : 실제로 디지털아카이브를 개발하는데 시간은 오래 걸리지 않습니다. 사용자가 공개하고자 하는 기록/자료를 정리하는데 드는 시간, 사용자 정보를 정리하는 시간, 디자인을 결정하거나 별도의 기능을 요청하는 경우에 시간이 많이 걸리게 됩니다. 
 
     - question : 오픈소스화에 대한 계획이 있나요 ?
-      answer : 당연합니다. team-durumi는 Opensource 정책과 생태계를 중요시 합니다. 다양한 디지털아카이브들이 지속적인 개발을 유지할 수 있게하는게 이 프로젝트의 목표입니다. 
+      answer : 당연합니다. Team-durumi는 Opensource 정책과 생태계를 중요시 합니다. 다양한 디지털아카이브들이 지속적인 개발을 유지할 수 있게하는게 이 프로젝트의 목표입니다. 
 
     - question : 왜 이런걸 만들게 된 거죠 ?
       answer : 개발팀이 경험한 디지털아카이브는 개발과 커뮤니케이션에 비용이 많이 들었습니다. 모든 디지털아카이브가 폐쇄적이어야 할 이유는 없고, 웹서버와 대용량의 Storage, 비싼 검색엔진과 라이센스비용을 내야 하는 데이터베이스를 사용할 이유는 없습니다. 무해하고, 괜찮은 디지털아카이브가 더 많이 생겨나고, 사용되길 바라는 마음에서 시작하게 되었습니다.
+
 ####################### call to actions #####################
 
 cta:
