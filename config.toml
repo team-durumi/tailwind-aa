@@ -24,7 +24,7 @@ writeStats = true
 [menu]
 
   [[menu.main]]
-  name = "Browse(content)"
+  name = "Browse"
   URL = "items"
   weight = 1
 
