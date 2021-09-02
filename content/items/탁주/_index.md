@@ -1,6 +1,6 @@
 ---
 lastmod: 
-title: 소주
-weight: 50
+title: 탁주
+weight: 
 type: page
 ---

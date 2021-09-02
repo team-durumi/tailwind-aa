@@ -1,6 +1,6 @@
 ---
 lastmod: 
-title: 점촌IPA
+title: Sample
 weight: 
 type: page
 ---

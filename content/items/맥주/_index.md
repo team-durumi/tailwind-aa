@@ -1,6 +1,6 @@
 ---
 lastmod: 
 title: 맥주
-weight: 
+weight: 100
 type: page
 ---

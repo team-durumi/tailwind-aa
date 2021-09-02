@@ -1,6 +1,6 @@
 ---
 lastmod: 
-title: 소주
-weight: 50
+title: 클라우드
+weight: 
 type: page
 ---

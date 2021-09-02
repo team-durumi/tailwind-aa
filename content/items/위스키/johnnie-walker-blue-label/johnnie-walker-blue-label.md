@@ -4,7 +4,7 @@ date:
 draft: 
 level_of_description: 
 media_type: 
-title: johnnie-walker-blue-label 
+title: johnnie-walker-blue-label-johnnie-walker-blue-label 
 description: 
 weight: 
 modified_at: 
