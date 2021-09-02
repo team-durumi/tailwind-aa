@@ -13,7 +13,8 @@ link:
 components: 
   - "items/맥주/테라/IMG_5184.JPG"
 tags:
-  - tag1
+  - 맥주
+  - 소주
 creators:
   - 진로
 subjects: 

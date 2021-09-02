@@ -29,16 +29,8 @@ hugo server -D
 - items는 depth가 있어서 md file을 모두 인식하지 못 함. (post로 변경)
 
 
-# Build Capacity 
+# Data(Rclone Sync)
 
-## 2배 분량 (items*20 )
-- ```content/items/dummy``` 폴더에 2G 분량으로 복제 (115 ms -> Built in 20310 ms)
-- Pages            |  411  
-- Paginator pages  |   37  
-- Non-page files   | 1271 
+- 공유드라이브/aa/tailwind-aa/items
+- https://drive.google.com/drive/u/1/folders/1TGlIbLoGAh6XlymvZk59Wcj7CjMz1QZK
 
-## 4배 분량 (items*40 )
-- ```content/items/dummy``` 폴더에 2G 분량으로 복제 (115 ms -> Built in 75280 ms)
-- Pages            |  779  
-- Paginator pages  |   74  
-- Non-page files   | 2511   

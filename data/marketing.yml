@@ -154,14 +154,25 @@ heroRight:
 twobox:
   title : 2box 제목
   firstBox:
-    - title : Free 버전
-      content : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+    - title : AA-0.1
+      content : >
+        design system UI 0.1 (darkmode)구성 / 개발
+        폴더 기반의 탐색 / 엑셀기반의 메타데이터 기반 탐색
+        태깅 기준의 자동화 컬렉션 구성
+        필드, 태그 관련 검색
+        (검색엔진) 텍스트 기반의 스크립트 검색 구성
       urlLabel : 더 알아보기
       url : http://durumi.io
 
   secondBox:
-    - title : Custom 버전
-      content : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+    - title : AA-0.2
+      content : >
+        (예정)notion 관련 데이터 데이터 연계 케이스 마련
+        (예정)design system UI 0.2  - 다이나믹 전시, 리서치가이드
+        (예정)다국어 관련 데이터 처리 및 UI 기준 개발
+        (예정)전시 / 리서치가이드 편집
+        (예정)Ubuntu 서버 기반의 자동화
+        (예정)폐쇄적 아카이브 운영 개발 / 별도 App 제작(mac, window)
       urlLabel : 더 알아보기
       url : http://durumi.io
 
@@ -175,22 +186,22 @@ faq:
   listItem:
 
     - question : 아카이브에 포함된 데이터는 어디서 가져오는 것인가요 ?
-      answer : 폴더형태로 저장되어 있는 사용자의 개별 클라우드 서비스(드롭박스, 아마존 S3)와 메타정보가 기록된 공개된 엑셀파일을 기준으로 노출합니다. 따라서, 완전히 공개된 자료를 처리하는데 특화된 디지털아카이브 솔루션입니다. 
+      answer : 폴더형태로 저장되어 있는 사용자의 개별 클라우드 서비스(구글드라이브, 드롭박스, 아마존 S3)와 메타정보가 기록된 공개된 엑셀파일을 기준으로 노출합니다. 따라서, 완전히 공개된 자료를 처리하는데 특화된 디지털아카이브 솔루션입니다. 
 
     - question : 관련된 자료들을 기사/논문/영상에 참조하기 위해서는 어떤 규정을 지켜야 하나요 ?
       answer : 현재 보고 있는 기사 / 논문 / 영상은 완전히 공개되어 있는 자료입니다. 기사/논문/영상에 사용할 때 "** 디지털아카이브의 자료"임을 밝히고 사용해주세요. 
 
     - question : 이런 형태의 디지털아카이브를 사용하기 위해서는 웹서버 혹은 데이터베이스가 필요한가요 ?
-      answer : 아닙니다. 현재 사이트는 거대한 HTML 덩어리라고 상상하세요. 해당 HTML에 접근하기 위해서는 최소 사양의 웹서버만 지원되면됩니다. 따라서 Netlify, CloudFlare 같은 서비스를 통해 웹에 공개해 놓습니다.
+      answer : 아닙니다. 현재 사이트는 거대한 HTML 덩어리라고 상상하세요. 해당 HTML에 접근하기 위해서는 최소 사양의 웹서버만 지원되면됩니다. 따라서 Netlify, CloudFlare 같은 서비스를 통해 웹에 공개해 놓습니다. 하지만 대규모의 디지털아카이브 프로젝트에서는 서버나 데이터베이스가 필요할 수 있습니다. 검색엔진을 설치하고 돌리기도 하니까요.
 
     - question : 개발에 걸리는 시간은 어느 정도되나요 ?
-      answer : 실제로 디지털아카이브를 개발하는데 시간은 오래 걸리지 않습니다. 사용자가 공개하고자 하는 기록/자료를 정리하는데 드는 시간, 사용자 정보를 정리하는 시간, 디자인을 결정하거나 별도의 기능을 요청하는 경우에 시간이 많이 걸리게 됩니다. 
+      answer : 사용자가 공개하고자 하는 기록/자료를 정리하는데 드는 시간, 사용자 정보를 정리하는 시간, 디자인을 결정하거나 별도의 기능을 요청하는 경우에 시간이 많이 걸리게 됩니다. 현재 보이는 모습 그대로 디지털아카이브를 공개하는 것은 오래 걸리지 않습니다.
 
-    - question : 오픈소스화에 대한 계획이 있나요 ?
+    - question : 소프트웨어 업데이트는 어떻게 진행되나요 ?
       answer : 당연합니다. Team-durumi는 Opensource 정책과 생태계를 중요시 합니다. 다양한 디지털아카이브들이 지속적인 개발을 유지할 수 있게하는게 이 프로젝트의 목표입니다. 
 
     - question : 왜 이런걸 만들게 된 거죠 ?
-      answer : 개발팀이 경험한 디지털아카이브는 개발과 커뮤니케이션에 비용이 많이 들었습니다. 모든 디지털아카이브가 폐쇄적이어야 할 이유는 없고, 웹서버와 대용량의 Storage, 비싼 검색엔진과 라이센스비용을 내야 하는 데이터베이스를 사용할 이유는 없습니다. 무해하고, 괜찮은 디지털아카이브가 더 많이 생겨나고, 사용되길 바라는 마음에서 시작하게 되었습니다.
+      answer : 기록하고, 정리해 이를 공개하는 것은 모든 조직 혹은 개인이 하고자 하는 목표임을 확인했지만 ‘모두 무겁게 시스템을 만들고, 운영 소요가 많은 방식으로 디지털아카이브를 유지해야할까 ?’ 라는 의문이 있었습니다. 기관이나 사기업, 비영리 조직, 혹은 중간지원 조직도 모두 앞다투어 아카이브를 만들고자 하는 것을 확인했고, 조금 새로운 방식으로 접근해보고자 하였습니다.
 
 ####################### call to actions #####################
 
