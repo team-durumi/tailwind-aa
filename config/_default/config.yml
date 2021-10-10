@@ -4,6 +4,7 @@ title: Durumi-AA
 baseURL: https://aa.durumi.io
 languageCode: ko-kr
 hasCJKLanguage: true
+defaultContentLanguage: ko
 
 theme:
   - github.com/team-durumi/tailwind-aa-theme

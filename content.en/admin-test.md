@@ -1,5 +1,5 @@
 ---
-title: 관리자 페이지 테스트
+title: Admin Dashboard
 type: page
 layout: admin-test
 ---

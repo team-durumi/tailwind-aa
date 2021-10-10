@@ -1,0 +1,40 @@
+ko:
+  languageName: Korean
+  contentDir: content
+  weight: 1
+en:
+  anguageName: English
+  contentDir: content.en
+  weight: 2
+  menu:
+    main:
+    - name: Home
+      url: /
+      weight: -120
+    - name: About
+      url: /about
+      weight: -110  
+    - name: Browse
+      url: /items/
+      weight: -90
+    - name: Tags
+      url: /tags/
+      weight: -80
+    - name: Creators
+      url: /creators/
+      weight: -70
+    - name: Subjects
+      url: /subjects/
+      weight: -60   
+    - name: Sources
+      url: /sources/
+      weight: -50 
+    - name: Venues
+      url: /venues/
+      weight: -40                     
+    - name: Blogs
+      url: /posts/
+      weight: -30
+    - name: Design-System
+      url: /marketing
+      weight: -20 
