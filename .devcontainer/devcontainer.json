@@ -1,0 +1,19 @@
+{
+	"name": "Hugo (tailwind-aa)",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"NODE_VERSION": "14"
+		}
+	},
+	"settings": {},
+	"extensions": [
+		"bungcip.better-toml",
+		"davidanson.vscode-markdownlint"
+	],
+	"forwardPorts": [
+		1313
+	],
+	"postCreateCommand": "uname -a",
+	"remoteUser": "vscode"
+}
