@@ -1,0 +1,21 @@
+# https://gohugo.io/getting-started/configuration/
+
+title: Durumi-AA
+baseURL: https://aa.durumi.io
+languageCode: ko-kr
+hasCJKLanguage: true
+
+theme:
+  - github.com/team-durumi/tailwind-aa-theme
+
+build:
+  writeStats: true
+
+taxonomies:
+  tag: tags
+  subject: subjects
+  creator: creators
+  venue: venues
+  source: sources
+
+paginate: 10

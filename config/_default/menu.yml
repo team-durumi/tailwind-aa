@@ -1,0 +1,31 @@
+main:
+  - name: 홈
+    url: /
+    weight: -120
+  - name: 소개
+    url: /about
+    weight: -110  
+  - name: 파일탐색
+    url: /items/
+    weight: -90
+  - name: 태그
+    url: /tags/
+    weight: -80
+  - name: 생산자
+    url: /creators/
+    weight: -70
+  - name: 주제
+    url: /subjects/
+    weight: -60   
+  - name: 출처
+    url: /sources/
+    weight: -50 
+  - name: 장소
+    url: /venues/
+    weight: -40                     
+  - name: 블로그
+    url: /posts/
+    weight: -30
+  - name: 디자인요소
+    url: /marketing
+    weight: -20  
