@@ -36,10 +36,11 @@
     </ul>
     <div class="w-full pt-4">
       <div x-show="openTab === 1">
-      	{{ partial "marketing/slider_alpine.html" . }}
+      	{{ partial "marketing/banner--slide.html" . }}
 	      {{ partial "marketing/slider_jquery.html" . }}
       </div>
       <div x-show="openTab === 2">
+        {{ partial "marketing/banner--sticky-top.html" . }}
         {{ partial "marketing/featured-items.html" . }}
     		{{ partial "marketing/hero-right.html" . }}
     		{{ partial "marketing/hero-left.html" . }}

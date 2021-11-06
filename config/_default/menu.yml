@@ -1,31 +1,125 @@
+# 헤더메뉴
 main:
   - name: 홈
     url: /
     weight: -120
   - name: 소개
     url: /about
-    weight: -110  
-  - name: 파일탐색
-    url: /items/
-    weight: -90
-  - name: 태그
-    url: /tags/
-    weight: -80
-  - name: 생산자
-    url: /creators/
-    weight: -70
-  - name: 주제
-    url: /subjects/
-    weight: -60   
-  - name: 출처
-    url: /sources/
-    weight: -50 
-  - name: 장소
-    url: /venues/
-    weight: -40                     
+    weight: -110
+  - name: 도구소개
+    url: /about
+    weight: 1
+    parent: 소개     
   - name: 블로그
     url: /posts/
-    weight: -30
+    weight: 2
+    parent: 소개
   - name: 디자인요소
     url: /marketing
-    weight: -20  
+    weight: 3
+    parent: 소개
+  - name: Github
+    url: https://github.com/team-durumi
+    weight: 4
+    parent: 소개                  
+  - name: 자료탐색
+    url: /items
+    weight: -100
+  - name: 검색
+    url: /search
+    weight: -90
+  - name: 컬렉션
+    url: 
+    weight: -80
+  - name: 태그
+    url: /tags/
+    weight: 1
+    parent: 컬렉션     
+  - name: 생산자
+    url: /creators/
+    weight: 2
+    parent: 컬렉션     
+  - name: 주제
+    url: /subjects/
+    weight: 3
+    parent: 컬렉션       
+  - name: 출처
+    url: /sources/
+    weight: 4
+    parent: 컬렉션     
+  - name: 장소
+    url: /venues/
+    parent: 컬렉션
+    weight: 5
+  - name: 전시
+    url: /exhibitions/
+    weight: -70
+
+# 푸터메뉴
+footer:
+  - name: 소개
+    url: /about
+    weight: -110
+  - name: 도구소개
+    url: /about
+    weight: 1
+    parent: 소개     
+  - name: 블로그
+    url: /posts/
+    weight: 2
+    parent: 소개
+  - name: 디자인요소
+    url: /marketing
+    weight: 3
+    parent: 소개
+  - name: Github
+    url: https://github.com/team-durumi
+    weight: 4
+    parent: 소개
+  - name: 자료
+    url: 
+    weight: -100                     
+  - name: 자료탐색
+    url: /items
+    weight: 1
+    parent: 자료    
+  - name: 검색
+    url: /search
+    weight: 2
+    parent: 자료
+  - name: 검색엔진
+    url: https://catalog.ccwps.org/
+    weight: 3
+    parent: 자료       
+  - name: 컬렉션
+    url: 
+    weight: -80
+  - name: 태그
+    url: /tags/
+    weight: 1
+    parent: 컬렉션     
+  - name: 생산자
+    url: /creators/
+    weight: 2
+    parent: 컬렉션     
+  - name: 주제
+    url: /subjects/
+    weight: 3
+    parent: 컬렉션       
+  - name: 출처
+    url: /sources/
+    weight: 4
+    parent: 컬렉션     
+  - name: 장소
+    url: /venues/
+    parent: 컬렉션
+    weight: 5
+  - name: collection-whisky
+    url: /en/collection-whisky
+    parent: 컬렉션     
+    weight: 6
+  - name: 전시
+    url: /exhibitions/
+    weight: -70  
+
+ 

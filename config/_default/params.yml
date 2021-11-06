@@ -1,0 +1,26 @@
+title: Durumi-AA
+description: Team Durumi는 시민사회영역과 IT개발 영역에서 10년 이상의 경력을 가진 구성원 중심으로 구성된 5명의 개발팀입니다.
+images:
+  - design-system-figma-preview.png
+
+license:
+  title_of_work: AA
+  link_to_work: https://aa.durumi.io
+  createor_of_work: Team-Durumi
+  link_to_creator_profile: http://github.com/team-durumi
+  year_of_creation: 2021
+
+footer :
+  location : Somewhere in Seoul
+  logo : img/durumi.png
+  대표전화 : 02-0000-0000
+  팩스 : 02-0000-0000
+  주소 : Somewhere in Seoul
+  이메일 : team@durumi.io
+  url : http://github.com/team-durumi
+  caption: Github
+  github : http://github.com/team-durumi
+  fb : 
+  tw : 
+  instagram : 
+  linkedin :

@@ -1,8 +1,9 @@
 {{ define "header" }}
-  {{ partial "basic/header-logo.html" . }}
+  {{ partial "basic/header-logo" . }}
 {{ end }}
 
 {{ define "main" }}
+  {{ partial "marketing/banner--sticky-top" . }} 
   {{ partial "marketing/hero-right" . }}
 	{{ partial "marketing/twobox" . }}
 	{{ partial "marketing/faq-accordion" . }}

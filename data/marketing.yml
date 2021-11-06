@@ -1,31 +1,5 @@
 ########### Partial/Basic에 노출되는 사용자 데이터를 편집합니다. ###########
 
-###################### user/org information #####################
-user:
-  title : Team Durumi
-  tagLine : Team Durumi는 시민사회영역과 IT개발 영역에서 10년 이상의 경력을 가진 구성원 중심으로 구성된 5명의 개발팀입니다.
-  tel : 02-0000-0000
-  fax : 02-0000-0000
-  email : team@durumi.io
-  representative: 홍영택, 한운장, 이용선, 정민수
-  location : Somewhere in Seoul
-  logo : img/durumi.png
-  footer :
-    대표전화 : 02-0000-0000
-    팩스 : 02-0000-0000
-    주소 : Somewhere in Seoul
-    이메일 : team@durumi.io
-    대표자 : 홍영택, 한운장, 이용선, 정민수
-    year : "2021"
-    github : http://github.com/team-durumi
-    url : http://github.com/team-durumi
-    caption: Github
-###################### 사용하지 않는 링크는 제거하면 됩니다. #####################    
-    fb : 
-    tw : 
-    instagram : 
-    linkedin : 
-
 ######## Partials/app에 노출되는 사용자 데이터를 편집합니다. ########
 
 ############################ simple-browse.html ##########################
