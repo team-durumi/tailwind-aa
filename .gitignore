@@ -4,3 +4,4 @@
 hugo_stats.json
 items-rclone.md
 /content/dummies
+.hugo_build.lock
