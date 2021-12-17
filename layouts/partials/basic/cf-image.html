@@ -2,9 +2,5 @@
 {{ $cfImageUrl := "" }}
 {{ $cfImagePrefix := .settings.cfImagePrefix }}
 {{ $image_style := index .settings.cfImageStyles .style }}
-{{ if eq hugo.IsProduction true }} 
-    {{  $cfImageUrl = printf "/cdn-cgi/image/%s/%s" $image_style .src }}
-{{else}} 
-    {{  $cfImageUrl = printf "%s/%s/%s" $cfImagePrefix $image_style .src }} 
-{{ end }}
+{{ $cfImageUrl = printf "%s/%s/%s" $cfImagePrefix $image_style .src }} 
 {{ return $cfImageUrl }}
