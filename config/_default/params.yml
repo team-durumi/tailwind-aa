@@ -23,3 +23,8 @@ footer:
   tw: 
   instagram: 
   linkedin:
+
+cfImagePrefix: 'https://aa.durumi.io/cdn-cgi/image'
+cfImageStyles:
+  thumb: 'fit=scale-down,width=300'
+  full: 'fit=scale-down,width=1920'    

@@ -1,0 +1,6 @@
+{{/* https://discourse.gohugo.io/t/cloudflareimageresize-and-development-preview/35288 */}}
+{{ $cfImageUrl := "" }}
+{{ $cfImagePrefix := .settings.cfImagePrefix }}
+{{ $image_style := index .settings.cfImageStyles .style }}
+{{  $cfImageUrl = printf "%s/%s/%s" $cfImagePrefix $image_style .src }} 
+{{ return $cfImageUrl }}
