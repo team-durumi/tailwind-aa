@@ -11,7 +11,7 @@ modified_at:
 created_at: 
 link: 
 components: 
-  - "items/위스키/johnnie-walker-blue-label/johnnie-walker-blue-label.jpg"
+  - "https://aa.durumi.io/items/위스키/johnnie-walker-blue-label/johnnie-walker-blue-label.jpg"
 tags: 
 creators: 
 subjects: 

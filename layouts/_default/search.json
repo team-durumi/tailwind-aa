@@ -1,5 +1,24 @@
+{{- $settings := .Site.Params -}}
 {{- $.Scratch.Add "index" slice -}}
 {{- range site.RegularPages -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "subjects" .Params.subjects "creators" .Params.creators "venues" .Params.venues "sources" .Params.sources "contents" .Plain "permalink" .Permalink) -}}
+  {{- $data := dict
+    "title" .Title
+    "contents" .Plain
+    "permalink" .Permalink
+    "tags" .Params.tags
+    "subjects" .Params.subjects
+    "creators" .Params.creators
+    "venues" .Params.venues
+    "sources" .Params.sources
+  -}}
+  {{- with .Params.components -}}
+    {{- $image := partial "basic/cf-image.html" (dict
+      "style" "thumb"
+      "src" (index . 0)
+      "settings" $settings
+    ) -}}
+    {{ $data = merge $data (dict "image" $image) }}
+  {{- end -}}
+  {{- $.Scratch.Add "index" $data -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}

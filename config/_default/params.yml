@@ -24,7 +24,14 @@ footer:
   instagram: 
   linkedin:
 
-cfImagePrefix: 'https://aa.durumi.io/cdn-cgi/image'
+cfImagePrefix: 'https://durumi.io/cdn-cgi/image'
 cfImageStyles:
   thumb: 'fit=scale-down,width=300'
-  full: 'fit=scale-down,width=1920'    
+  full: 'fit=scale-down,width=1920'
+
+image_extension_whitelist:
+  - jpg
+  - jpeg
+  - png
+  - gif
+  - JPG
