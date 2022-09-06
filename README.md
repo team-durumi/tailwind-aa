@@ -1,4 +1,4 @@
-# aa.durumi.io
+# roll.durumi.io
 
 ## tailwind-aa / durumi-archive
 - 두 프로젝트 모두 tailwind-aa testbed로 사용합니다.(두 프로젝트 모두 Team Netlify에 연결되어 있습니다. )
@@ -53,11 +53,10 @@ go mod tidy
 - 공유드라이브/aa/tailwind-aa/items
 - https://drive.google.com/drive/u/1/folders/1TGlIbLoGAh6XlymvZk59Wcj7CjMz1QZK
 
-# next aa-0.2
+# next roll-0.2
 - (예정)design system UI 0.2 - 다이나믹 전시, 리서치가이드, 콘텐츠
 - (예정)다국어 관련 데이터 처리 및 UI 기준 개발 
 - (예정)전시 / 리서치가이드 편집 
 - (예정)Ubuntu 서버 기반의 자동화 
 - (예정)폐쇄적 아카이브 운영 개발
 - (예정)다이나믹함 aa 운영을 위한 데이터베이스 구성
-

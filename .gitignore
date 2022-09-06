@@ -5,3 +5,6 @@ hugo_stats.json
 items-rclone.md
 /content/dummies
 .hugo_build.lock
+
+# Local Netlify folder
+.netlify

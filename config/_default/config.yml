@@ -1,7 +1,7 @@
 # https://gohugo.io/getting-started/configuration/
 
 title: Durumi-AA
-baseURL: https://aa.durumi.io
+baseURL: https://roll.durumi.io
 languageCode: ko-kr
 hasCJKLanguage: true
 defaultContentLanguage: ko
