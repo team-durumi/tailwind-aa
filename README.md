@@ -1,5 +1,24 @@
 # roll.durumi.io
 
+## roll version
+- 0.2 / 2022년 9월 0.2 버전을 시작합니다. 
+- hugo v0.102.3+extended darwin/arm64 BuildDate=unknown
+
+## roll theme
+```
+imports:
+- path: github.com/team-durumi/tailwind-aa-theme
+- path: github.com/team-durumi/hugo-search-fuse-js-aa
+```
+
+## local
+```bash
+git clone git@github.com:team-durumi/tailwind-aa.git
+npm i
+go mod tidy
+hugo server 
+```
+
 ## tailwind-aa / durumi-archive
 - 두 프로젝트 모두 tailwind-aa testbed로 사용합니다.(두 프로젝트 모두 Team Netlify에 연결되어 있습니다. )
 - 서버 내려가도 되요. 안심하세요. 
@@ -54,9 +73,9 @@ go mod tidy
 - https://drive.google.com/drive/u/1/folders/1TGlIbLoGAh6XlymvZk59Wcj7CjMz1QZK
 
 # next roll-0.2
-- (예정)design system UI 0.2 - 다이나믹 전시, 리서치가이드, 콘텐츠
-- (예정)다국어 관련 데이터 처리 및 UI 기준 개발 
-- (예정)전시 / 리서치가이드 편집 
-- (예정)Ubuntu 서버 기반의 자동화 
-- (예정)폐쇄적 아카이브 운영 개발
-- (예정)다이나믹함 aa 운영을 위한 데이터베이스 구성
+- (marketing theme)design system UI 0.2 - 다이나믹 전시, 리서치가이드, 콘텐츠
+- (ww)다국어 관련 데이터 처리 및 UI 기준 개발 
+- (wwm)전시 / 리서치가이드 편집 
+- (예정)Ubuntu 서버 기반의 자동화 - 별도 build 서버
+- (ccwps)폐쇄적 아카이브 운영 개발
+- (예정)다이나믹함 roll 운영을 위한 데이터베이스 구성(노코디비)
