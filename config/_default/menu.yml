@@ -51,9 +51,25 @@ main:
     url: /venues/
     parent: 컬렉션
     weight: 5
+  - name: 콘텐츠
+    url:
+    weight: -70
   - name: 전시
     url: /exhibitions/
-    weight: -70
+    parent: 콘텐츠
+    weight: 1
+  - name: 리서치가이드
+    url: /research-guide/
+    parent: 콘텐츠
+    weight: 2
+  - name: 쇼츠
+    url: /shorts/
+    parent: 콘텐츠
+    weight: 3
+  - name: 학습가이드 & 참여
+    url: /learning-guide/
+    parent: 콘텐츠
+    weight: 4    
 
 # 푸터메뉴
 footer:
@@ -87,8 +103,8 @@ footer:
     url: /search
     weight: 2
     parent: 자료
-  - name: 검색엔진
-    url: https://catalog.ccwps.org/
+  - name: 검색엔진(사용)
+    url: https://catalog.facwa.kr
     weight: 3
     parent: 자료       
   - name: 컬렉션
@@ -118,8 +134,10 @@ footer:
     url: /en/collection-whisky
     parent: 컬렉션     
     weight: 6
+  - name: 콘텐츠
+    url:
+    weight: -70
   - name: 전시
     url: /exhibitions/
-    weight: -70  
-
- 
+    parent: 콘텐츠
+    weight: 1

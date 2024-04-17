@@ -34,13 +34,6 @@ git submodule deinit -f themes/tailwind-aa-theme
 rm -rf .git/modules/themes/tailwind-aa-theme
 git rm -f tailwind-aa-theme 
 ```
-
-```bash
-git clone https://github.com/team-durumi/tailwind-aa.git
-hugo mod npm pack
-npm install
-hugo server -F --cleanDestinationDir
-```
 - postcss 관련 에러가 뜨면, 테마관련 Pakage가 다운로드 안 되서 생기는 문제일 수 있어요. 
 - marketing component에 내용이 없이 나온다면 data/marketing.yml 이 작성되어 있는지 확인하세요.
 
